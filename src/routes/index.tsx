@@ -5,7 +5,6 @@ import {
   GraduationCap,
   Target,
   Handshake,
-  BarChart3,
   ShieldCheck,
   Heart,
   Mail,
