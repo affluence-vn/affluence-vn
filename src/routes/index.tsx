@@ -49,7 +49,7 @@ const team: TeamMember[] = [
     gradient: "var(--grad-brand)",
     email: "vuongnguyen710+affluence@gmail.com",
     linkedin: "https://www.linkedin.com/in/vuongnm/",
-    phone: "0969 135 192",
+    },
   },
   {
     name: "Nguyễn Thị Tú Uyên",
