@@ -53,7 +53,7 @@ const OPTIONS: ContactOption[] = [
   },
   {
     label: "Telegram",
-    href: `https://t.me/+${PHONE_TEL.replace("+", "")}`,
+    href: "https://t.me/Uyenadc",
     external: true,
     Icon: TelegramIcon,
     bg: "bg-[#29A9EB]",
