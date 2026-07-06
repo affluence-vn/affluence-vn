@@ -329,7 +329,7 @@ function WhatWeDo() {
     },
     {
       title: "Chỉ trả khi có học viên thật",
-      text: "Mỗi đăng ký được xác minh. Bạn trả hoa hồng sau khi có người thật đăng ký — không cần thanh toán trước.",
+      text: "Mỗi đăng ký đều được xác minh trước. Bạn trả hoa hồng sau khi có người thật đăng ký — không cần thanh toán trước.",
     },
   ];
 
