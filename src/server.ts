@@ -44,18 +44,34 @@ function isH3SwallowedErrorBody(body: string): boolean {
   }
 }
 
+// Set Cross-Origin-Opener-Policy so Firefox opens external links (e.g. LinkedIn,
+// which serves COOP: same-origin) in a fresh browsing-context group instead of
+// failing with NS_ERROR_DOM_COOP_FAILED when the target page's COOP kicks in.
+function withCoopHeader(response: Response): Response {
+  const headers = new Headers(response.headers);
+  headers.set("Cross-Origin-Opener-Policy", "same-origin");
+  return new Response(response.body, {
+    status: response.status,
+    statusText: response.statusText,
+    headers,
+  });
+}
+
 export default {
   async fetch(request: Request, env: unknown, ctx: unknown) {
     try {
       const handler = await getServerEntry();
       const response = await handler.fetch(request, env, ctx);
-      return await normalizeCatastrophicSsrResponse(response);
+      const normalized = await normalizeCatastrophicSsrResponse(response);
+      return withCoopHeader(normalized);
     } catch (error) {
       console.error(error);
-      return new Response(renderErrorPage(), {
-        status: 500,
-        headers: { "content-type": "text/html; charset=utf-8" },
-      });
+      return withCoopHeader(
+        new Response(renderErrorPage(), {
+          status: 500,
+          headers: { "content-type": "text/html; charset=utf-8" },
+        }),
+      );
     }
   },
 };
