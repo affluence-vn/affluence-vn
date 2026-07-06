@@ -103,8 +103,11 @@ function Logo() {
         alt="Affluence logo"
         width={28}
         height={28}
+        fetchPriority="high"
+        decoding="async"
         className="h-7 w-7 object-contain"
       />
+
       <span className="text-[17px] font-extrabold tracking-tight">Affluence</span>
     </div>
   );
