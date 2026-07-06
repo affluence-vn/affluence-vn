@@ -78,7 +78,7 @@ const values = [
   {
     icon: Heart,
     title: "Đồng hành dài hạn",
-    text: "Chúng tôi phát triển cùng trường học và publisher — không phải chạy chiến dịch rồi biến mất.",
+    text: "Chúng tôi tin rằng sự phát triển bền vững được xây dựng từ những mối quan hệ hợp tác lâu dài. Affluence luôn đồng hành cùng trường học và publisher trên mỗi chặng đường phát triển.",
   },
 ];
 
