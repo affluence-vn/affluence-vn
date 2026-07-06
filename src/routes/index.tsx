@@ -19,7 +19,7 @@ import howWorksSchool from "../assets/howworks-0.jpg";
 import howWorksPartner from "../assets/howworks-1.jpg";
 import logoMark from "../assets/logo-mark.png";
 import vuongPhoto from "../assets/vuong.png.asset.json";
-import { FloatingContact } from "../components/FloatingContact";
+import { FloatingContact, TelegramIcon, ZaloIcon } from "../components/FloatingContact";
 
 export const Route = createFileRoute("/")({
   head: () => ({
