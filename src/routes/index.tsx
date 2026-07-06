@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import {
   ArrowRight,
@@ -72,19 +73,11 @@ const values = [
   },
 ];
 
-const stats = [
-  { value: "500+", label: "Đối tác publisher" },
-  { value: "200+", label: "Trường & trung tâm" },
-  { value: "1.2M+", label: "Học viên tiếp cận" },
-  { value: "98%", label: "Đối tác gia hạn" },
-];
-
 function AboutPage() {
   return (
     <div className="min-h-screen bg-page text-ink">
       <Nav />
       <Hero />
-      <StatsBar />
       <Mission />
       <WhatWeDo />
       <Team />
@@ -139,22 +132,52 @@ function Nav() {
 }
 
 function Hero() {
+  const blobsRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = blobsRef.current;
+    if (!el) return;
+    let raf = 0;
+    const onScroll = () => {
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(() => {
+        const y = window.scrollY;
+        el.querySelectorAll<HTMLElement>("[data-speed]").forEach((blob) => {
+          const speed = Number(blob.dataset.speed ?? 0);
+          blob.style.transform = `translate3d(0, ${y * speed}px, 0)`;
+        });
+      });
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      cancelAnimationFrame(raf);
+    };
+  }, []);
+
   return (
     <section className="relative overflow-hidden bg-white pt-20 pb-24 md:pt-28 md:pb-32">
-      {/* animated blobs */}
-      <div className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div
-          className="animate-blob absolute -top-32 -left-24 h-[380px] w-[380px] rounded-full opacity-40 blur-3xl"
-          style={{ background: "var(--grad-sunrise)" }}
-        />
-        <div
-          className="animate-blob absolute top-10 -right-32 h-[420px] w-[420px] rounded-full opacity-40 blur-3xl"
-          style={{ background: "var(--grad-sky)", animationDelay: "3s" }}
-        />
-        <div
-          className="animate-blob absolute -bottom-40 left-1/3 h-[360px] w-[360px] rounded-full opacity-30 blur-3xl"
-          style={{ background: "var(--grad-lime)", animationDelay: "6s" }}
-        />
+      {/* animated blobs — parallax with scroll */}
+      <div ref={blobsRef} className="pointer-events-none absolute inset-0 overflow-hidden">
+        <div data-speed="0.18" className="absolute -top-32 -left-24">
+          <div
+            className="animate-blob h-[380px] w-[380px] rounded-full opacity-40 blur-3xl"
+            style={{ background: "var(--grad-sunrise)" }}
+          />
+        </div>
+        <div data-speed="0.34" className="absolute top-10 -right-32">
+          <div
+            className="animate-blob h-[420px] w-[420px] rounded-full opacity-40 blur-3xl"
+            style={{ background: "var(--grad-sky)", animationDelay: "3s" }}
+          />
+        </div>
+        <div data-speed="0.26" className="absolute -bottom-40 left-1/3">
+          <div
+            className="animate-blob h-[360px] w-[360px] rounded-full opacity-30 blur-3xl"
+            style={{ background: "var(--grad-lime)", animationDelay: "6s" }}
+          />
+        </div>
       </div>
 
       <div className="relative mx-auto max-w-4xl px-6 text-center">
@@ -192,22 +215,6 @@ function Hero() {
   );
 }
 
-function StatsBar() {
-  return (
-    <section className="border-y border-border bg-white/60">
-      <div className="mx-auto grid max-w-6xl grid-cols-2 gap-6 px-6 py-10 md:grid-cols-4">
-        {stats.map((s) => (
-          <div key={s.label} className="text-center">
-            <div className="font-display text-[32px] font-extrabold tracking-tight text-gradient-brand md:text-[40px]">
-              {s.value}
-            </div>
-            <div className="mt-1 text-[13px] font-semibold text-ink-soft">{s.label}</div>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
-}
 
 function Mission() {
   return (
