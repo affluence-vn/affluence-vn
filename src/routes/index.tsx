@@ -606,7 +606,25 @@ function Location() {
                 className="flex items-center gap-2.5 text-[14px] font-semibold text-ink-soft transition-colors hover:text-primary"
               >
                 <Phone className="h-4 w-4 shrink-0" />
-                Hotline · Zalo · Telegram: 0869 688 153
+                Hotline: 0869 688 153 (08:00 – 17:30, hằng ngày)
+              </a>
+              <a
+                href="https://zalo.me/0868688153"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2.5 text-[14px] font-semibold text-ink-soft transition-colors hover:text-primary"
+              >
+                <ZaloIcon className="h-4 w-4 shrink-0" />
+                Zalo: 0868 688 153 (Hỗ trợ 24/7)
+              </a>
+              <a
+                href="https://t.me/Uyenadc"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2.5 text-[14px] font-semibold text-ink-soft transition-colors hover:text-primary"
+              >
+                <TelegramIcon className="h-4 w-4 shrink-0" />
+                Telegram: @Uyenadc
               </a>
               <a
                 href="mailto:nuyenaffluence.md@gmail.com"
