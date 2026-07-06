@@ -281,8 +281,14 @@ function Mission() {
 
               {/* Affluencer */}
               <div className="flex flex-col items-center text-center">
-                <div className="grid h-14 w-14 place-items-center rounded-2xl shadow-lift" style={{ background: "var(--grad-sunrise)" }}>
-                  <Users className="h-6 w-6 text-white" strokeWidth={2.2} />
+                <div className="grid h-14 w-14 place-items-center rounded-2xl bg-white shadow-lift ring-1 ring-border">
+                  <img
+                    src={logoMark}
+                    alt="Affluence"
+                    width={32}
+                    height={32}
+                    className="h-8 w-8 object-contain"
+                  />
                 </div>
                 <div className="mt-3 text-[14px] font-bold text-ink">Affluencer</div>
               </div>
