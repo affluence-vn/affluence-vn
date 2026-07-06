@@ -148,7 +148,12 @@ function Hero() {
         const y = window.scrollY;
         el.querySelectorAll<HTMLElement>("[data-speed]").forEach((blob) => {
           const speed = Number(blob.dataset.speed ?? 0);
-          blob.style.transform = `translate3d(0, ${y * speed}px, 0)`;
+          const dir = Number(blob.dataset.dir ?? 1);
+          const ty = y * speed;
+          const tx = Math.sin(y * 0.003) * 120 * dir;
+          const rot = y * 0.05 * dir;
+          const scale = 1 + Math.min(y / 2400, 0.35);
+          blob.style.transform = `translate3d(${tx}px, ${ty}px, 0) rotate(${rot}deg) scale(${scale})`;
         });
       });
     };
@@ -164,25 +169,26 @@ function Hero() {
     <section className="relative overflow-hidden bg-white pt-20 pb-24 md:pt-28 md:pb-32">
       {/* animated blobs — parallax with scroll */}
       <div ref={blobsRef} className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div data-speed="0.18" className="absolute -top-32 -left-24">
+        <div data-speed="0.35" data-dir="1" className="absolute -top-32 -left-24 will-change-transform">
           <div
             className="animate-blob h-[380px] w-[380px] rounded-full opacity-40 blur-3xl"
             style={{ background: "var(--grad-sunrise)" }}
           />
         </div>
-        <div data-speed="0.34" className="absolute top-10 -right-32">
+        <div data-speed="0.6" data-dir="-1" className="absolute top-10 -right-32 will-change-transform">
           <div
             className="animate-blob h-[420px] w-[420px] rounded-full opacity-40 blur-3xl"
             style={{ background: "var(--grad-sky)", animationDelay: "3s" }}
           />
         </div>
-        <div data-speed="0.26" className="absolute -bottom-40 left-1/3">
+        <div data-speed="0.5" data-dir="1" className="absolute -bottom-40 left-1/3 will-change-transform">
           <div
             className="animate-blob h-[360px] w-[360px] rounded-full opacity-30 blur-3xl"
             style={{ background: "var(--grad-lime)", animationDelay: "6s" }}
           />
         </div>
       </div>
+
 
       <div className="relative mx-auto max-w-4xl px-6 text-center">
         <h1 className="text-[42px] font-extrabold leading-[1.05] tracking-tight md:text-[64px]">
