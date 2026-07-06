@@ -49,15 +49,15 @@ const team: TeamMember[] = [
     gradient: "var(--grad-brand)",
     email: "vuongnguyen710+affluence@gmail.com",
     linkedin: "https://www.linkedin.com/in/vuongnm/",
-    phone: "0969 135 192",
   },
+
   {
     name: "Nguyễn Thị Tú Uyên",
     role: "Trưởng phòng Affiliate",
     bio: "Quản lý affiliate dày dặn kinh nghiệm, chuyên xây dựng và vận hành mạng lưới publisher mang lại chuyển đổi thật cho đối tác giáo dục.",
     initials: "TU",
     gradient: "var(--grad-sunrise)",
-    phone: "0869 688 153",
+
   },
 ];
 
@@ -150,52 +150,52 @@ function Hero() {
   useEffect(() => {
     const el = blobsRef.current;
     if (!el) return;
+    const blobs = Array.from(el.querySelectorAll<HTMLElement>("[data-speed]"));
+    const start = performance.now();
     let raf = 0;
-    const onScroll = () => {
-      cancelAnimationFrame(raf);
-      raf = requestAnimationFrame(() => {
-        const y = window.scrollY;
-        el.querySelectorAll<HTMLElement>("[data-speed]").forEach((blob) => {
-          const speed = Number(blob.dataset.speed ?? 0);
-          const dir = Number(blob.dataset.dir ?? 1);
-          const ty = y * speed;
-          const tx = Math.sin(y * 0.003) * 120 * dir;
-          const rot = y * 0.05 * dir;
-          const scale = 1 + Math.min(y / 2400, 0.35);
-          blob.style.transform = `translate3d(${tx}px, ${ty}px, 0) rotate(${rot}deg) scale(${scale})`;
-        });
+    const tick = (now: number) => {
+      const t = (now - start) / 1000;
+      const y = window.scrollY;
+      blobs.forEach((blob) => {
+        const speed = Number(blob.dataset.speed ?? 0);
+        const dir = Number(blob.dataset.dir ?? 1);
+        const phase = Number(blob.dataset.phase ?? 0);
+        const ty = y * speed + Math.sin(t * 0.6 + phase) * 40;
+        const tx = Math.cos(t * 0.5 + phase) * 90 * dir + Math.sin(y * 0.003) * 60 * dir;
+        const rot = y * 0.05 * dir + t * 6 * dir;
+        const scale = 1 + Math.sin(t * 0.4 + phase) * 0.08 + Math.min(y / 3000, 0.25);
+        blob.style.transform = `translate3d(${tx}px, ${ty}px, 0) rotate(${rot}deg) scale(${scale})`;
       });
+      raf = requestAnimationFrame(tick);
     };
-    window.addEventListener("scroll", onScroll, { passive: true });
-    onScroll();
-    return () => {
-      window.removeEventListener("scroll", onScroll);
-      cancelAnimationFrame(raf);
-    };
+    raf = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(raf);
   }, []);
+
 
   return (
     <section className="relative overflow-hidden bg-white pt-20 pb-24 md:pt-28 md:pb-32">
       {/* animated blobs — parallax with scroll */}
       <div ref={blobsRef} className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div data-speed="0.35" data-dir="1" className="absolute -top-32 -left-24 will-change-transform">
+        <div data-speed="0.35" data-dir="1" data-phase="0" className="absolute -top-32 -left-24 will-change-transform">
           <div
-            className="animate-blob h-[380px] w-[380px] rounded-full opacity-40 blur-3xl"
+            className="h-[380px] w-[380px] rounded-full opacity-40 blur-3xl"
             style={{ background: "var(--grad-sunrise)" }}
           />
         </div>
-        <div data-speed="0.6" data-dir="-1" className="absolute top-10 -right-32 will-change-transform">
+        <div data-speed="0.6" data-dir="-1" data-phase="2" className="absolute top-10 -right-32 will-change-transform">
           <div
-            className="animate-blob h-[420px] w-[420px] rounded-full opacity-40 blur-3xl"
-            style={{ background: "var(--grad-sky)", animationDelay: "3s" }}
+            className="h-[420px] w-[420px] rounded-full opacity-40 blur-3xl"
+            style={{ background: "var(--grad-sky)" }}
           />
         </div>
-        <div data-speed="0.5" data-dir="1" className="absolute -bottom-40 left-1/3 will-change-transform">
+        <div data-speed="0.5" data-dir="1" data-phase="4" className="absolute -bottom-40 left-1/3 will-change-transform">
           <div
-            className="animate-blob h-[360px] w-[360px] rounded-full opacity-30 blur-3xl"
-            style={{ background: "var(--grad-lime)", animationDelay: "6s" }}
+            className="h-[360px] w-[360px] rounded-full opacity-30 blur-3xl"
+            style={{ background: "var(--grad-lime)" }}
           />
         </div>
+
       </div>
 
 
@@ -588,13 +588,9 @@ function Location() {
               </div>
             </div>
             <div className="mt-6 space-y-3 border-t border-border pt-6">
-              <a
-                href="tel:+84969135192"
-                className="flex items-center gap-2.5 text-[14px] font-semibold text-ink-soft transition-colors hover:text-primary"
-              >
-                <Phone className="h-4 w-4 shrink-0" />
-                0969 135 192
-              </a>
+
+
+
               <a
                 href="mailto:vuongnguyen710+affluence@gmail.com"
                 className="flex items-center gap-2.5 text-[14px] font-semibold text-ink-soft transition-colors hover:text-primary"
@@ -655,13 +651,6 @@ function Footer() {
           <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.14em] text-ink-mute">
             Liên hệ
           </p>
-          <a
-            href="tel:+84969135192"
-            className="flex items-center gap-2 text-[13px] font-medium text-ink-soft transition-colors hover:text-primary"
-          >
-            <Phone className="h-4 w-4 shrink-0" />
-            0969 135 192
-          </a>
           <a
             href="mailto:vuongnguyen710+affluence@gmail.com"
             className="mt-2.5 flex items-center gap-2 text-[13px] font-medium text-ink-soft transition-colors hover:text-primary"
