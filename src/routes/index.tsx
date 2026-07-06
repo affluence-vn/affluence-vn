@@ -405,8 +405,18 @@ function WhatWeDo() {
             </div>
           </div>
 
+          {/* Two-way connector: Trường ↔ Cộng tác viên */}
+          <div className="relative flex h-12 items-center justify-center md:h-16">
+            <div className="absolute h-full w-px bg-gradient-to-b from-primary/20 via-primary/40 to-primary/20" />
+            <svg className="relative z-10 h-10 w-10 rounded-full border border-border bg-white p-2 shadow-sm text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M7 16V4M7 4L3 8M7 4l4 4" />
+              <path d="M17 8v12m0 0l4-4m-4 4l-4-4" />
+            </svg>
+          </div>
+
           {/* Cộng tác viên — nội dung trái, ảnh phải */}
           <div className="grid overflow-hidden rounded-2xl border border-border bg-white md:grid-cols-[1.15fr_0.85fr] md:items-center">
+
             <div className="order-2 p-8 md:order-1 md:py-9 md:pl-10 md:pr-2">
               <h3 className="text-[22px] font-extrabold tracking-tight">
                 Chia sẻ link, hoa hồng tự về
