@@ -6,7 +6,7 @@ const PHONE_LOCAL = "0869688153";
 const EMAIL = "nuyenaffluence.md@gmail.com";
 
 /** Zalo brand mark — speech bubble with a "Z" */
-function ZaloIcon({ className }: { className?: string }) {
+export function ZaloIcon({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 24 24" className={className} fill="none" aria-hidden="true">
       <path
@@ -25,7 +25,7 @@ function ZaloIcon({ className }: { className?: string }) {
 }
 
 /** Telegram paper-plane brand mark */
-function TelegramIcon({ className }: { className?: string }) {
+export function TelegramIcon({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 24 24" className={className} fill="currentColor" aria-hidden="true">
       <path d="M21.94 4.6l-3.2 15.07c-.24 1.06-.87 1.32-1.76.82l-4.87-3.6-2.35 2.27c-.26.26-.48.48-.98.48l.35-4.97 9.05-8.18c.39-.35-.09-.55-.61-.2L6.27 13.18l-4.8-1.5c-1.04-.33-1.06-1.04.22-1.54l18.78-7.24c.87-.32 1.63.2 1.47 1.7z" />
