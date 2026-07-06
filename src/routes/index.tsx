@@ -254,40 +254,60 @@ function Mission() {
 
         <div className="relative">
           <div className="absolute inset-0 -m-4 rounded-3xl bg-grad-brand opacity-10 blur-2xl" />
-          <div className="relative flex min-h-[360px] items-center justify-center overflow-hidden rounded-3xl border border-border bg-white p-6 shadow-lift md:min-h-[440px]">
-            <div className="relative h-[320px] w-[320px] md:h-[380px] md:w-[380px]">
-              {/* Orbit circle */}
-              <svg className="absolute inset-0 h-full w-full text-primary/25" viewBox="0 0 400 400" fill="none">
-                <circle cx="200" cy="200" r="150" stroke="currentColor" strokeWidth="2" strokeDasharray="8 6" />
-              </svg>
-
-              {/* Center label */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
-                <div className="text-[12px] font-extrabold uppercase tracking-[0.15em] text-primary">Affluence</div>
-              </div>
-
-              {/* Trường học — top */}
-              <div className="absolute top-[12%] left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+          <div className="relative flex min-h-[280px] items-center justify-center overflow-hidden rounded-3xl border border-border bg-white p-6 shadow-lift md:min-h-[340px]">
+            <div className="flex w-full max-w-xl items-center justify-between gap-3 md:gap-4">
+              {/* Trường học */}
+              <div className="flex flex-col items-center text-center">
                 <div className="grid h-14 w-14 place-items-center rounded-2xl bg-grad-brand shadow-lift">
                   <GraduationCap className="h-6 w-6 text-white" strokeWidth={2.2} />
                 </div>
-                <div className="mt-2 text-[14px] font-bold text-ink">Trường học</div>
+                <div className="mt-3 text-[14px] font-bold text-ink">Trường học</div>
               </div>
 
-              {/* Affluencer — bottom-left */}
-              <div className="absolute top-[72%] left-[17%] -translate-x-1/2 -translate-y-1/2 text-center">
+              {/* Two-way connector 1 */}
+              <div className="flex flex-1 items-center justify-center px-1">
+                <svg className="h-6 w-full text-primary/30" viewBox="0 0 120 12" preserveAspectRatio="none">
+                  <defs>
+                    <marker id="arrowL1" markerWidth="8" markerHeight="8" refX="2" refY="4" orient="auto" markerUnits="strokeWidth">
+                      <path d="M8 0 L0 4 L8 8 z" fill="currentColor" />
+                    </marker>
+                    <marker id="arrowR1" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="strokeWidth">
+                      <path d="M0 0 L8 4 L0 8 z" fill="currentColor" />
+                    </marker>
+                  </defs>
+                  <line x1="6" y1="6" x2="114" y2="6" stroke="currentColor" strokeWidth="2" markerStart="url(#arrowL1)" markerEnd="url(#arrowR1)" />
+                </svg>
+              </div>
+
+              {/* Affluencer */}
+              <div className="flex flex-col items-center text-center">
                 <div className="grid h-14 w-14 place-items-center rounded-2xl shadow-lift" style={{ background: "var(--grad-sunrise)" }}>
                   <Users className="h-6 w-6 text-white" strokeWidth={2.2} />
                 </div>
-                <div className="mt-2 text-[14px] font-bold text-ink">Affluencer</div>
+                <div className="mt-3 text-[14px] font-bold text-ink">Affluencer</div>
               </div>
 
-              {/* Publisher — bottom-right */}
-              <div className="absolute top-[72%] left-[83%] -translate-x-1/2 -translate-y-1/2 text-center">
+              {/* Two-way connector 2 */}
+              <div className="flex flex-1 items-center justify-center px-1">
+                <svg className="h-6 w-full text-primary/30" viewBox="0 0 120 12" preserveAspectRatio="none">
+                  <defs>
+                    <marker id="arrowL2" markerWidth="8" markerHeight="8" refX="2" refY="4" orient="auto" markerUnits="strokeWidth">
+                      <path d="M8 0 L0 4 L8 8 z" fill="currentColor" />
+                    </marker>
+                    <marker id="arrowR2" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="strokeWidth">
+                      <path d="M0 0 L8 4 L0 8 z" fill="currentColor" />
+                    </marker>
+                  </defs>
+                  <line x1="6" y1="6" x2="114" y2="6" stroke="currentColor" strokeWidth="2" markerStart="url(#arrowL2)" markerEnd="url(#arrowR2)" />
+                </svg>
+              </div>
+
+              {/* Publisher */}
+              <div className="flex flex-col items-center text-center">
                 <div className="grid h-14 w-14 place-items-center rounded-2xl shadow-lift" style={{ background: "var(--grad-mint)" }}>
                   <Handshake className="h-6 w-6 text-white" strokeWidth={2.2} />
                 </div>
-                <div className="mt-2 text-[14px] font-bold text-ink">Publisher</div>
+                <div className="mt-3 text-[14px] font-bold text-ink">Publisher</div>
               </div>
             </div>
           </div>
