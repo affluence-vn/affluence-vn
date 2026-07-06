@@ -67,7 +67,7 @@ const team: TeamMember[] = [
 const values = [
   {
     icon: Target,
-    title: "Hiệu quả đo được",
+    title: "Hiệu quả đo lường",
     text: "Mỗi chiến dịch được đo bằng học viên thật, hợp đồng thật — không phải lượt hiển thị.",
   },
   {
