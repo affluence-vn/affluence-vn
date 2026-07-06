@@ -27,46 +27,18 @@ type TeamMember = {
 
 const team: TeamMember[] = [
   {
-    name: "Nguyễn Minh Anh",
-    role: "Nhà sáng lập & CEO",
-    bio: "10+ năm kinh nghiệm performance marketing trong lĩnh vực giáo dục. Từng dẫn dắt tăng trưởng cho các thương hiệu EdTech hàng đầu.",
-    initials: "MA",
+    name: "Nguyễn Minh Vượng",
+    role: "Đồng sáng lập & Giám đốc điều hành",
+    bio: "Cựu lãnh đạo tại Shopify, từng giữ vị trí Phó Chủ tịch (VP) tại Spiraledge Inc. Hơn 10 năm kinh nghiệm xây dựng và mở rộng doanh nghiệp thương mại điện tử & marketing hiệu quả.",
+    initials: "MV",
     gradient: "var(--grad-brand)",
   },
   {
-    name: "Trần Hải Đăng",
-    role: "Giám đốc Chiến lược",
-    bio: "Chuyên gia affiliate & xây dựng mạng lưới publisher. Kết nối hơn 500 đối tác trên toàn quốc.",
-    initials: "HĐ",
+    name: "Nguyễn Thị Tú Uyên",
+    role: "Trưởng phòng Affiliate",
+    bio: "Quản lý affiliate dày dặn kinh nghiệm, chuyên xây dựng và vận hành mạng lưới publisher mang lại chuyển đổi thật cho đối tác giáo dục.",
+    initials: "TU",
     gradient: "var(--grad-sunrise)",
-  },
-  {
-    name: "Lê Thu Phương",
-    role: "Trưởng phòng Đối tác Giáo dục",
-    bio: "Đồng hành cùng 200+ trường học, trung tâm ngoại ngữ và học viện trong việc mở rộng tuyển sinh.",
-    initials: "TP",
-    gradient: "var(--grad-mint)",
-  },
-  {
-    name: "Phạm Quốc Bảo",
-    role: "Giám đốc Sản phẩm",
-    bio: "Xây dựng nền tảng theo dõi hiệu quả, chống gian lận và tối ưu chuyển đổi cho hệ sinh thái Affluence.",
-    initials: "QB",
-    gradient: "var(--grad-sky)",
-  },
-  {
-    name: "Đỗ Khánh Linh",
-    role: "Trưởng phòng Sáng tạo",
-    bio: "Thiết kế trải nghiệm nội dung và creative campaigns cho các chiến dịch tuyển sinh trọng điểm.",
-    initials: "KL",
-    gradient: "var(--grad-peach)",
-  },
-  {
-    name: "Vũ Anh Tuấn",
-    role: "Trưởng phòng Dữ liệu",
-    bio: "Biến dữ liệu chuyển đổi thành insight, giúp đối tác ra quyết định ngân sách chính xác từng đồng.",
-    initials: "AT",
-    gradient: "var(--grad-lime)",
   },
 ];
 
