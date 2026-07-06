@@ -319,7 +319,7 @@ function WhatWeDo() {
 function Team() {
   return (
     <section id="team" className="py-24 md:py-28">
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-4xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.14em] text-primary">
             Đội ngũ
