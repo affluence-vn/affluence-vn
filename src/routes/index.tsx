@@ -661,7 +661,7 @@ function Footer() {
         <div>
           <Logo />
           <p className="mt-3 max-w-md text-[13px] leading-relaxed text-ink-soft">
-            Agency performance marketing chuyên biệt cho ngành giáo dục Việt Nam.
+            Agency performance marketing chuyên sâu trong lĩnh vực giáo dục Việt Nam.
           </p>
         </div>
         <div>
