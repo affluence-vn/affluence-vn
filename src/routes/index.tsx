@@ -20,8 +20,14 @@ import howWorksPartner from "../assets/howworks-1.jpg";
 import logoMark from "../assets/logo-mark.png";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    links: [
+      { rel: "preload", as: "image", href: logoMark, fetchpriority: "high" },
+    ],
+  }),
   component: AboutPage,
 });
+
 
 type TeamMember = {
   name: string;
@@ -97,8 +103,11 @@ function Logo() {
         alt="Affluence logo"
         width={28}
         height={28}
+        fetchPriority="high"
+        decoding="async"
         className="h-7 w-7 object-contain"
       />
+
       <span className="text-[17px] font-extrabold tracking-tight">Affluence</span>
     </div>
   );
