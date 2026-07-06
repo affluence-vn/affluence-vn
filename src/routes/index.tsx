@@ -3,7 +3,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import {
   ArrowRight,
   GraduationCap,
-  Sparkles,
   Target,
   Handshake,
   BarChart3,
@@ -18,6 +17,7 @@ import {
 } from "lucide-react";
 import howWorksSchool from "../assets/howworks-0.jpg";
 import howWorksPartner from "../assets/howworks-1.jpg";
+import logoMark from "../assets/logo-mark.png";
 
 export const Route = createFileRoute("/")({
   component: AboutPage,
@@ -92,9 +92,13 @@ function AboutPage() {
 function Logo() {
   return (
     <div className="flex items-center gap-2">
-      <div className="grid h-7 w-7 place-items-center rounded-lg bg-grad-brand shadow-lift">
-        <Sparkles className="h-4 w-4 text-white" strokeWidth={2.5} />
-      </div>
+      <img
+        src={logoMark}
+        alt="Affluence logo"
+        width={28}
+        height={28}
+        className="h-7 w-7 object-contain"
+      />
       <span className="text-[17px] font-extrabold tracking-tight">Affluence</span>
     </div>
   );
