@@ -77,14 +77,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Affluence — Kết nối trường học & mạng lưới xuất bản" },
+      { title: "Affluence — Kết nối trường học & mạng lưới marketers" },
       {
         name: "description",
         content:
           "Affluence là agency marketing kết nối trường học, trung tâm giáo dục với các nhà xuất bản và mạng lưới affiliate hàng đầu Việt Nam.",
       },
       { name: "author", content: "Affluence" },
-      { property: "og:title", content: "Affluence — Agency marketing giáo dục" },
+      { property: "og:title", content: "Affluence — Kết nối trường học & mạng lưới marketers" },
       {
         property: "og:description",
         content:
@@ -92,6 +92,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Affluence — Kết nối trường học & mạng lưới marketers" },
+      { name: "description", content: "Affluence là agency marketing kết nối trường học, trung tâm giáo dục với các nhà quảng cáo và mạng lưới affiliate hàng đầu Việt Nam." },
+      { property: "og:description", content: "Affluence là agency marketing kết nối trường học, trung tâm giáo dục với các nhà quảng cáo và mạng lưới affiliate hàng đầu Việt Nam." },
+      { name: "twitter:description", content: "Affluence là agency marketing kết nối trường học, trung tâm giáo dục với các nhà quảng cáo và mạng lưới affiliate hàng đầu Việt Nam." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b98eafda-8b39-4dc8-86d9-caa8d72ad6d2/id-preview-7fbb241e--4a93ac13-5758-4d05-bc43-3a8cda8ee022.lovable.app-1783307493206.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b98eafda-8b39-4dc8-86d9-caa8d72ad6d2/id-preview-7fbb241e--4a93ac13-5758-4d05-bc43-3a8cda8ee022.lovable.app-1783307493206.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
