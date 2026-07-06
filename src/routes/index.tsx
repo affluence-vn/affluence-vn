@@ -57,7 +57,7 @@ const team: TeamMember[] = [
     bio: "Quản lý affiliate dày dặn kinh nghiệm, chuyên xây dựng và vận hành mạng lưới publisher mang lại chuyển đổi thật cho đối tác giáo dục.",
     initials: "TU",
     gradient: "var(--grad-sunrise)",
-    phone: "0869 688 153",
+
   },
 ];
 
