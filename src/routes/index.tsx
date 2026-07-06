@@ -589,7 +589,7 @@ function CTA() {
             <a
               href="mailto:Hello@affluence.vn"
               aria-label="Email Affluence"
-              className="grid h-12 w-12 place-items-center rounded-full bg-white text-primary shadow-lift transition-transform hover:-translate-y-0.5"
+              className="grid h-12 w-12 place-items-center rounded-full bg-primary text-white shadow-lift transition-all hover:-translate-y-0.5 active:bg-white active:text-primary"
             >
               <Mail className="h-5 w-5" />
             </a>
