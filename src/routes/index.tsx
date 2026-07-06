@@ -306,11 +306,11 @@ function WhatWeDo() {
           </h2>
         </div>
 
-        <div className="mt-14 grid gap-7">
+        <div className="mt-10 grid gap-4">
           {/* Trường / trung tâm — ảnh trái, nội dung phải */}
           <div className="grid overflow-hidden rounded-2xl border border-border bg-white md:grid-cols-[0.85fr_1.15fr] md:items-center">
             <div
-              className="relative flex min-h-[260px] items-center justify-center md:min-h-[340px]"
+              className="relative flex min-h-[220px] items-center justify-center md:min-h-[300px]"
               style={{ background: "linear-gradient(135deg,#EEF2FF 0%,#ffffff 100%)" }}
             >
               <img
@@ -378,7 +378,7 @@ function WhatWeDo() {
               </a>
             </div>
             <div
-              className="relative order-1 flex min-h-[260px] items-center justify-center md:order-2 md:min-h-[340px]"
+              className="relative order-1 flex min-h-[220px] items-center justify-center md:order-2 md:min-h-[300px]"
               style={{ background: "linear-gradient(135deg,#D1FAE5 0%,#ffffff 100%)" }}
             >
               <img
