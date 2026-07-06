@@ -589,12 +589,13 @@ function Location() {
             </div>
             <div className="mt-6 space-y-3 border-t border-border pt-6">
               <a
-                href="tel:+84969135192"
+                href="mailto:vuongnguyen710+affluence@gmail.com"
                 className="flex items-center gap-2.5 text-[14px] font-semibold text-ink-soft transition-colors hover:text-primary"
               >
-                <Phone className="h-4 w-4 shrink-0" />
-                0969 135 192
+                <Mail className="h-4 w-4 shrink-0" />
+                vuongnguyen710+affluence@gmail.com
               </a>
+
               <a
                 href="mailto:vuongnguyen710+affluence@gmail.com"
                 className="flex items-center gap-2.5 text-[14px] font-semibold text-ink-soft transition-colors hover:text-primary"
