@@ -375,7 +375,7 @@ function WhatWeDo() {
           <div className="grid overflow-hidden rounded-2xl border border-border bg-white md:grid-cols-[1.15fr_0.85fr] md:items-center">
             <div className="order-2 p-8 md:order-1 md:py-9 md:pl-10 md:pr-2">
               <h3 className="text-[22px] font-extrabold tracking-tight">
-                Chia sẻ một link, hoa hồng tự về
+                Chia sẻ link, hoa hồng tự về
               </h3>
               <div className="mt-5 grid gap-4">
                 {partnerFeatures.map((f) => (
