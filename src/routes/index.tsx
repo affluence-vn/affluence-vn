@@ -5,7 +5,6 @@ import {
   GraduationCap,
   Target,
   Handshake,
-  BarChart3,
   ShieldCheck,
   Heart,
   Mail,
@@ -255,27 +254,41 @@ function Mission() {
 
         <div className="relative">
           <div className="absolute inset-0 -m-4 rounded-3xl bg-grad-brand opacity-10 blur-2xl" />
-          <div className="relative overflow-hidden rounded-3xl border border-border bg-white p-8 shadow-lift">
-            <div className="grid grid-cols-2 gap-4">
-              {[
-                { icon: GraduationCap, label: "Trường học", grad: "var(--grad-brand)" },
-                { icon: Handshake, label: "Publisher", grad: "var(--grad-sunrise)" },
-                { icon: BarChart3, label: "Chuyển đổi thật", grad: "var(--grad-mint)" },
-                { icon: ShieldCheck, label: "Minh bạch", grad: "var(--grad-sky)" },
-              ].map(({ icon: Icon, label, grad }) => (
-                <div
-                  key={label}
-                  className="rounded-2xl border border-border bg-secondary/50 p-5"
-                >
-                  <div
-                    className="grid h-11 w-11 place-items-center rounded-xl shadow-lift"
-                    style={{ background: grad }}
-                  >
-                    <Icon className="h-5 w-5 text-white" strokeWidth={2.2} />
-                  </div>
-                  <div className="mt-4 text-[15px] font-bold text-ink">{label}</div>
+          <div className="relative flex min-h-[360px] items-center justify-center overflow-hidden rounded-3xl border border-border bg-white p-6 shadow-lift md:min-h-[440px]">
+            <div className="relative h-[320px] w-[320px] md:h-[380px] md:w-[380px]">
+              {/* Orbit circle */}
+              <svg className="absolute inset-0 h-full w-full text-primary/25" viewBox="0 0 400 400" fill="none">
+                <circle cx="200" cy="200" r="150" stroke="currentColor" strokeWidth="2" strokeDasharray="8 6" />
+              </svg>
+
+              {/* Center label */}
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+                <div className="text-[12px] font-extrabold uppercase tracking-[0.15em] text-primary">Affluence</div>
+              </div>
+
+              {/* Trường học — top */}
+              <div className="absolute top-[12%] left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+                <div className="grid h-14 w-14 place-items-center rounded-2xl bg-grad-brand shadow-lift">
+                  <GraduationCap className="h-6 w-6 text-white" strokeWidth={2.2} />
                 </div>
-              ))}
+                <div className="mt-2 text-[14px] font-bold text-ink">Trường học</div>
+              </div>
+
+              {/* Affluencer — bottom-left */}
+              <div className="absolute top-[72%] left-[17%] -translate-x-1/2 -translate-y-1/2 text-center">
+                <div className="grid h-14 w-14 place-items-center rounded-2xl shadow-lift" style={{ background: "var(--grad-sunrise)" }}>
+                  <Users className="h-6 w-6 text-white" strokeWidth={2.2} />
+                </div>
+                <div className="mt-2 text-[14px] font-bold text-ink">Affluencer</div>
+              </div>
+
+              {/* Publisher — bottom-right */}
+              <div className="absolute top-[72%] left-[83%] -translate-x-1/2 -translate-y-1/2 text-center">
+                <div className="grid h-14 w-14 place-items-center rounded-2xl shadow-lift" style={{ background: "var(--grad-mint)" }}>
+                  <Handshake className="h-6 w-6 text-white" strokeWidth={2.2} />
+                </div>
+                <div className="mt-2 text-[14px] font-bold text-ink">Publisher</div>
+              </div>
             </div>
           </div>
         </div>
