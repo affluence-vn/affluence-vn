@@ -546,6 +546,13 @@ function CTA() {
               <ArrowRight className="h-4 w-4 shrink-0" />
             </a>
             <a
+              href="tel:+84869688153"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-white/40 bg-white/10 px-7 py-3.5 text-sm font-bold text-white backdrop-blur transition-colors hover:bg-white/20 md:w-auto"
+            >
+              <Phone className="h-4 w-4" />
+              Hotline · Zalo · Telegram: 0869 688 153
+            </a>
+            <a
               href="https://www.linkedin.com/in/vuongnm/"
               target="_blank"
               rel="noopener noreferrer"
@@ -582,9 +589,13 @@ function Location() {
               </div>
             </div>
             <div className="mt-6 space-y-3 border-t border-border pt-6">
-
-
-
+              <a
+                href="tel:+84869688153"
+                className="flex items-center gap-2.5 text-[14px] font-semibold text-ink-soft transition-colors hover:text-primary"
+              >
+                <Phone className="h-4 w-4 shrink-0" />
+                Hotline · Zalo · Telegram: 0869 688 153
+              </a>
               <a
                 href="mailto:nuyenaffluence.md@gmail.com"
                 className="flex items-center gap-2.5 text-[14px] font-semibold text-ink-soft transition-colors hover:text-primary"
@@ -651,6 +662,13 @@ function Footer() {
           >
             <Mail className="h-4 w-4 shrink-0" />
             nuyenaffluence.md@gmail.com
+          </a>
+          <a
+            href="tel:+84869688153"
+            className="mt-2.5 flex items-center gap-2 text-[13px] font-medium text-ink-soft transition-colors hover:text-primary"
+          >
+            <Phone className="h-4 w-4 shrink-0" />
+            Hotline · Zalo · Telegram: 0869 688 153
           </a>
           <a
             href="https://www.linkedin.com/in/vuongnm/"
