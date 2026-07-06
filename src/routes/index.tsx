@@ -514,16 +514,16 @@ function Values() {
 
 function CTA() {
   return (
-    <section id="lien-he" className="px-6 py-24 md:py-28">
-      <div className="relative mx-auto max-w-5xl overflow-hidden rounded-[32px] bg-grad-brand p-10 shadow-glow md:p-16">
+    <section id="lien-he" className="px-4 py-20 sm:px-6 md:py-28">
+      <div className="relative mx-auto max-w-5xl overflow-hidden rounded-[28px] bg-grad-brand p-6 shadow-glow sm:p-10 md:rounded-[32px] md:p-16">
         <div className="pointer-events-none absolute -top-20 -right-20 h-72 w-72 rounded-full bg-white/15 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-24 -left-16 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
         <div className="relative grid gap-8 md:grid-cols-[1.3fr_1fr] md:items-center">
           <div>
-            <h2 className="text-[32px] font-extrabold leading-[1.1] tracking-tight text-white md:text-[42px]">
+            <h2 className="text-[26px] font-extrabold leading-[1.15] tracking-tight text-white sm:text-[32px] md:text-[42px]">
               Cùng Affluence xây dựng chiến dịch tuyển sinh tiếp theo của bạn.
             </h2>
-            <p className="mt-4 text-[16px] leading-[1.7] text-white/85">
+            <p className="mt-4 text-[15px] leading-[1.7] text-white/85 sm:text-[16px]">
               Dù bạn là trường học, trung tâm giáo dục, publisher hay mạng lưới affiliate — chúng
               tôi luôn sẵn sàng lắng nghe.
             </p>
@@ -531,22 +531,24 @@ function CTA() {
           <div className="flex flex-col gap-3 md:items-end">
             <a
               href="mailto:vuongnguyen710+affluence@gmail.com"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-7 py-3.5 text-sm font-bold text-primary shadow-lift transition-transform hover:-translate-y-0.5"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-white px-5 py-3.5 text-[13px] font-bold text-primary shadow-lift transition-transform hover:-translate-y-0.5 sm:text-sm md:w-auto md:rounded-full md:px-7"
             >
-              vuongnguyen710+affluence@gmail.com
-              <ArrowRight className="h-4 w-4" />
+              <span className="break-all text-center">vuongnguyen710+affluence@gmail.com</span>
+              <ArrowRight className="h-4 w-4 shrink-0" />
             </a>
             <a
               href="https://www.linkedin.com/in/vuongnm/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-white/40 bg-white/10 px-7 py-3.5 text-sm font-bold text-white backdrop-blur transition-colors hover:bg-white/20"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-white/40 bg-white/10 px-7 py-3.5 text-sm font-bold text-white backdrop-blur transition-colors hover:bg-white/20 md:w-auto"
             >
               <Linkedin className="h-4 w-4" />
               Kết nối trên LinkedIn
             </a>
           </div>
         </div>
+      </div>
+
       </div>
     </section>
   );
