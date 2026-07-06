@@ -150,29 +150,28 @@ function Hero() {
   useEffect(() => {
     const el = blobsRef.current;
     if (!el) return;
+    const blobs = Array.from(el.querySelectorAll<HTMLElement>("[data-speed]"));
+    const start = performance.now();
     let raf = 0;
-    const onScroll = () => {
-      cancelAnimationFrame(raf);
-      raf = requestAnimationFrame(() => {
-        const y = window.scrollY;
-        el.querySelectorAll<HTMLElement>("[data-speed]").forEach((blob) => {
-          const speed = Number(blob.dataset.speed ?? 0);
-          const dir = Number(blob.dataset.dir ?? 1);
-          const ty = y * speed;
-          const tx = Math.sin(y * 0.003) * 120 * dir;
-          const rot = y * 0.05 * dir;
-          const scale = 1 + Math.min(y / 2400, 0.35);
-          blob.style.transform = `translate3d(${tx}px, ${ty}px, 0) rotate(${rot}deg) scale(${scale})`;
-        });
+    const tick = (now: number) => {
+      const t = (now - start) / 1000;
+      const y = window.scrollY;
+      blobs.forEach((blob) => {
+        const speed = Number(blob.dataset.speed ?? 0);
+        const dir = Number(blob.dataset.dir ?? 1);
+        const phase = Number(blob.dataset.phase ?? 0);
+        const ty = y * speed + Math.sin(t * 0.6 + phase) * 40;
+        const tx = Math.cos(t * 0.5 + phase) * 90 * dir + Math.sin(y * 0.003) * 60 * dir;
+        const rot = y * 0.05 * dir + t * 6 * dir;
+        const scale = 1 + Math.sin(t * 0.4 + phase) * 0.08 + Math.min(y / 3000, 0.25);
+        blob.style.transform = `translate3d(${tx}px, ${ty}px, 0) rotate(${rot}deg) scale(${scale})`;
       });
+      raf = requestAnimationFrame(tick);
     };
-    window.addEventListener("scroll", onScroll, { passive: true });
-    onScroll();
-    return () => {
-      window.removeEventListener("scroll", onScroll);
-      cancelAnimationFrame(raf);
-    };
+    raf = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(raf);
   }, []);
+
 
   return (
     <section className="relative overflow-hidden bg-white pt-20 pb-24 md:pt-28 md:pb-32">
