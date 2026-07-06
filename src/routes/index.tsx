@@ -37,7 +37,7 @@ const team: TeamMember[] = [
   {
     name: "Nguyễn Minh Vương",
     role: "Đồng sáng lập & Giám đốc điều hành",
-    bio: "Cựu lãnh đạo tại Shopify, từng giữ vị trí Phó Chủ tịch (VP) tại Spiraledge Inc. Hơn 10 năm kinh nghiệm xây dựng và mở rộng doanh nghiệp thương mại điện tử & marketing hiệu quả.",
+    bio: "Ex-Shopify, VP tại Spiraledge Inc. Hơn 10 năm kinh nghiệm xây dựng và mở rộng doanh nghiệp thương mại điện tử & marketing hiệu quả.",
     initials: "MV",
     gradient: "var(--grad-brand)",
     email: "vuongnguyen710+affluence@gmail.com",
