@@ -47,7 +47,7 @@ const team: TeamMember[] = [
     bio: "Ex-Shopify, VP tại Spiraledge Inc. Hơn 10 năm kinh nghiệm xây dựng và mở rộng doanh nghiệp thương mại điện tử & marketing hiệu quả.",
     initials: "MV",
     gradient: "var(--grad-brand)",
-    email: "vuongnguyen710+affluence@gmail.com",
+    email: "nuyenaffluence.md@gmail.com",
     linkedin: "https://www.linkedin.com/in/vuongnm/",
   },
 
@@ -539,10 +539,10 @@ function CTA() {
           </div>
           <div className="flex flex-col gap-3 md:items-end">
             <a
-              href="mailto:vuongnguyen710+affluence@gmail.com"
+              href="mailto:nuyenaffluence.md@gmail.com"
               className="inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-white px-5 py-3.5 text-[13px] font-bold text-primary shadow-lift transition-transform hover:-translate-y-0.5 sm:text-sm md:w-auto md:rounded-full md:px-7"
             >
-              <span className="break-all text-center">vuongnguyen710+affluence@gmail.com</span>
+              <span className="break-all text-center">nuyenaffluence.md@gmail.com</span>
               <ArrowRight className="h-4 w-4 shrink-0" />
             </a>
             <a
@@ -586,11 +586,11 @@ function Location() {
 
 
               <a
-                href="mailto:vuongnguyen710+affluence@gmail.com"
+                href="mailto:nuyenaffluence.md@gmail.com"
                 className="flex items-center gap-2.5 text-[14px] font-semibold text-ink-soft transition-colors hover:text-primary"
               >
                 <Mail className="h-4 w-4 shrink-0" />
-                vuongnguyen710+affluence@gmail.com
+                nuyenaffluence.md@gmail.com
               </a>
               <a
                 href="https://www.linkedin.com/in/vuongnm/"
@@ -646,11 +646,11 @@ function Footer() {
             Liên hệ
           </p>
           <a
-            href="mailto:vuongnguyen710+affluence@gmail.com"
+            href="mailto:nuyenaffluence.md@gmail.com"
             className="mt-2.5 flex items-center gap-2 text-[13px] font-medium text-ink-soft transition-colors hover:text-primary"
           >
             <Mail className="h-4 w-4 shrink-0" />
-            vuongnguyen710+affluence@gmail.com
+            nuyenaffluence.md@gmail.com
           </a>
           <a
             href="https://www.linkedin.com/in/vuongnm/"
