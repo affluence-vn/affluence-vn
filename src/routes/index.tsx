@@ -11,6 +11,7 @@ import {
   Heart,
   Mail,
   Linkedin,
+  MapPin,
 } from "lucide-react";
 
 export const Route = createFileRoute("/")({
@@ -23,6 +24,8 @@ type TeamMember = {
   bio: string;
   initials: string;
   gradient: string;
+  email?: string;
+  linkedin?: string;
 };
 
 const team: TeamMember[] = [
@@ -32,6 +35,8 @@ const team: TeamMember[] = [
     bio: "Cựu lãnh đạo tại Shopify, từng giữ vị trí Phó Chủ tịch (VP) tại Spiraledge Inc. Hơn 10 năm kinh nghiệm xây dựng và mở rộng doanh nghiệp thương mại điện tử & marketing hiệu quả.",
     initials: "MV",
     gradient: "var(--grad-brand)",
+    email: "vuongnguyen710+affluence@gmail.com",
+    linkedin: "https://www.linkedin.com/in/vuongnm/",
   },
   {
     name: "Nguyễn Thị Tú Uyên",
@@ -78,6 +83,7 @@ function AboutPage() {
       <Team />
       <Values />
       <CTA />
+      <Location />
       <Footer />
     </div>
   );
@@ -353,20 +359,26 @@ function Team() {
               </div>
               <p className="mt-5 text-[14.5px] leading-[1.7] text-ink-soft">{m.bio}</p>
               <div className="mt-5 flex gap-2 border-t border-border pt-4">
-                <button
-                  type="button"
-                  aria-label={`Email ${m.name}`}
-                  className="grid h-9 w-9 place-items-center rounded-full border border-border text-ink-soft transition-colors hover:bg-primary-subtle hover:text-primary"
-                >
-                  <Mail className="h-4 w-4" />
-                </button>
-                <button
-                  type="button"
-                  aria-label={`LinkedIn ${m.name}`}
-                  className="grid h-9 w-9 place-items-center rounded-full border border-border text-ink-soft transition-colors hover:bg-primary-subtle hover:text-primary"
-                >
-                  <Linkedin className="h-4 w-4" />
-                </button>
+                {m.email && (
+                  <a
+                    href={`mailto:${m.email}`}
+                    aria-label={`Email ${m.name}`}
+                    className="grid h-9 w-9 place-items-center rounded-full border border-border text-ink-soft transition-colors hover:bg-primary-subtle hover:text-primary"
+                  >
+                    <Mail className="h-4 w-4" />
+                  </a>
+                )}
+                {m.linkedin && (
+                  <a
+                    href={m.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`LinkedIn ${m.name}`}
+                    className="grid h-9 w-9 place-items-center rounded-full border border-border text-ink-soft transition-colors hover:bg-primary-subtle hover:text-primary"
+                  >
+                    <Linkedin className="h-4 w-4" />
+                  </a>
+                )}
               </div>
             </article>
           ))}
@@ -426,18 +438,99 @@ function CTA() {
           </div>
           <div className="flex flex-col gap-3 md:items-end">
             <a
-              href="mailto:hello@affluence.vn"
+              href="mailto:vuongnguyen710+affluence@gmail.com"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-7 py-3.5 text-sm font-bold text-primary shadow-lift transition-transform hover:-translate-y-0.5"
             >
-              hello@affluence.vn
+              vuongnguyen710+affluence@gmail.com
               <ArrowRight className="h-4 w-4" />
             </a>
             <a
-              href="tel:+84900000000"
+              href="https://www.linkedin.com/in/vuongnm/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 rounded-full border border-white/40 bg-white/10 px-7 py-3.5 text-sm font-bold text-white backdrop-blur transition-colors hover:bg-white/20"
             >
-              Đặt lịch tư vấn miễn phí
+              <Linkedin className="h-4 w-4" />
+              Kết nối trên LinkedIn
             </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Location() {
+  const address = "166/2D Đ. Trần Văn Dư, Tân Bình, Hồ Chí Minh 70000, Vietnam";
+  const mapSrc = `https://maps.google.com/maps?q=${encodeURIComponent(address)}&output=embed`;
+  const directions = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
+
+  return (
+    <section id="vi-tri" className="bg-white py-24 md:py-28">
+      <div className="mx-auto max-w-6xl px-6">
+        <div className="mx-auto max-w-2xl text-center">
+          <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.14em] text-primary">
+            Địa chỉ
+          </p>
+          <h2 className="text-[34px] font-bold leading-[1.15] tracking-tight md:text-[42px]">
+            Tìm chúng tôi tại <span className="text-gradient-brand">Sài Gòn</span>.
+          </h2>
+          <p className="mt-5 text-[16px] leading-[1.75] text-ink-soft">
+            Văn phòng Affluence nằm ở quận Tân Bình — luôn sẵn sàng đón đối tác ghé thăm.
+          </p>
+        </div>
+
+        <div className="mt-14 grid gap-8 md:grid-cols-[1fr_1.4fr] md:items-stretch">
+          <div className="flex flex-col justify-center rounded-3xl border border-border bg-secondary/40 p-8">
+            <div className="flex items-start gap-3">
+              <div className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-grad-brand shadow-lift">
+                <MapPin className="h-5 w-5 text-white" strokeWidth={2.2} />
+              </div>
+              <div>
+                <h3 className="text-[18px] font-bold tracking-tight">Văn phòng Affluence</h3>
+                <p className="mt-1.5 text-[14.5px] leading-[1.7] text-ink-soft">{address}</p>
+              </div>
+            </div>
+            <div className="mt-6 space-y-3 border-t border-border pt-6">
+              <a
+                href="mailto:vuongnguyen710+affluence@gmail.com"
+                className="flex items-center gap-2.5 text-[14px] font-semibold text-ink-soft transition-colors hover:text-primary"
+              >
+                <Mail className="h-4 w-4 shrink-0" />
+                vuongnguyen710+affluence@gmail.com
+              </a>
+              <a
+                href="https://www.linkedin.com/in/vuongnm/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2.5 text-[14px] font-semibold text-ink-soft transition-colors hover:text-primary"
+              >
+                <Linkedin className="h-4 w-4 shrink-0" />
+                linkedin.com/in/vuongnm
+              </a>
+            </div>
+            <a
+              href={directions}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 inline-flex items-center gap-2 self-start rounded-full bg-grad-brand px-6 py-3 text-[13px] font-bold text-white shadow-lift transition-transform hover:-translate-y-0.5"
+            >
+              Mở trên Google Maps
+              <ArrowRight className="h-4 w-4" />
+            </a>
+          </div>
+
+          <div className="relative overflow-hidden rounded-3xl border border-border shadow-lift">
+            <iframe
+              title="Bản đồ văn phòng Affluence"
+              src={mapSrc}
+              width="100%"
+              height="100%"
+              style={{ border: 0, minHeight: 380 }}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            />
           </div>
         </div>
       </div>
@@ -448,14 +541,46 @@ function CTA() {
 function Footer() {
   return (
     <footer className="border-t border-border bg-white">
-      <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-6 px-6 py-10 md:flex-row md:items-center">
+      <div className="mx-auto grid max-w-6xl gap-8 px-6 py-12 md:grid-cols-3">
         <div>
           <Logo />
-          <p className="mt-3 max-w-md text-[13px] text-ink-soft">
+          <p className="mt-3 max-w-md text-[13px] leading-relaxed text-ink-soft">
             Agency performance marketing chuyên biệt cho ngành giáo dục Việt Nam.
           </p>
         </div>
-        <div className="text-[13px] text-ink-mute">
+        <div>
+          <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.14em] text-ink-mute">
+            Liên hệ
+          </p>
+          <a
+            href="mailto:vuongnguyen710+affluence@gmail.com"
+            className="flex items-center gap-2 text-[13px] font-medium text-ink-soft transition-colors hover:text-primary"
+          >
+            <Mail className="h-4 w-4 shrink-0" />
+            vuongnguyen710+affluence@gmail.com
+          </a>
+          <a
+            href="https://www.linkedin.com/in/vuongnm/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-2.5 flex items-center gap-2 text-[13px] font-medium text-ink-soft transition-colors hover:text-primary"
+          >
+            <Linkedin className="h-4 w-4 shrink-0" />
+            linkedin.com/in/vuongnm
+          </a>
+        </div>
+        <div>
+          <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.14em] text-ink-mute">
+            Địa chỉ
+          </p>
+          <p className="flex items-start gap-2 text-[13px] leading-relaxed text-ink-soft">
+            <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+            166/2D Đ. Trần Văn Dư, Tân Bình, Hồ Chí Minh 70000, Vietnam
+          </p>
+        </div>
+      </div>
+      <div className="border-t border-border">
+        <div className="mx-auto max-w-6xl px-6 py-5 text-center text-[13px] text-ink-mute">
           © {new Date().getFullYear()} Affluence. Bản quyền thuộc về Affluence Vietnam.
         </div>
       </div>
