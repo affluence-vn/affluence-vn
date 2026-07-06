@@ -587,7 +587,7 @@ function CTA() {
           </div>
           <div className="flex items-center justify-center gap-3 md:justify-end">
             <a
-              href="mailto:nuyenaffluence.md@gmail.com"
+              href="mailto:Hello@affluence.vn"
               aria-label="Email Affluence"
               className="grid h-12 w-12 place-items-center rounded-full bg-white text-primary shadow-lift transition-transform hover:-translate-y-0.5"
             >
@@ -680,11 +680,11 @@ function Footer() {
             Liên hệ
           </p>
           <a
-            href="mailto:nuyenaffluence.md@gmail.com"
+            href="mailto:Hello@affluence.vn"
             className="mt-2.5 flex items-center gap-2 text-[13px] font-medium text-ink-soft transition-colors hover:text-primary"
           >
             <Mail className="h-4 w-4 shrink-0" />
-            nuyenaffluence.md@gmail.com
+            Hello@affluence.vn
           </a>
           <a
             href="tel:+84869688153"
