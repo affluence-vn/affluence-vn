@@ -289,7 +289,7 @@ function Mission() {
 
               {/* Two-way connector 2 */}
               <div className="flex flex-1 items-center justify-center px-1">
-                <svg className="h-8 w-full text-primary/70" viewBox="0 0 120 16" preserveAspectRatio="none">
+                <svg className="h-8 w-full text-ink/80" viewBox="0 0 120 16" preserveAspectRatio="none">
                   <defs>
                     <marker id="arrowL2" markerWidth="10" markerHeight="10" refX="2" refY="5" orient="auto" markerUnits="strokeWidth">
                       <path d="M10 0 L0 5 L10 10 z" fill="currentColor" />
