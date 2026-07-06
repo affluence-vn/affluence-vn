@@ -546,8 +546,7 @@ function CTA() {
               Cùng Affluence xây dựng chiến dịch tuyển sinh tiếp theo của bạn.
             </h2>
             <p className="mt-4 text-[15px] leading-[1.7] text-white/85 sm:text-[16px]">
-              Dù bạn là trường học, trung tâm giáo dục, publisher hay mạng lưới affiliate — chúng
-              tôi luôn sẵn sàng lắng nghe.
+              Dù bạn là trường học, trung tâm giáo dục, publisher hay mạng lưới affiliate — chúng tôi luôn sẵn sàng lắng nghe và kết nối để cùng phát triển.
             </p>
           </div>
           <div className="flex flex-col gap-3 md:items-end">
