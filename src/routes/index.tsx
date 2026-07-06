@@ -340,7 +340,7 @@ function WhatWeDo() {
     },
     {
       title: "Lấy link riêng trong vài giây",
-      text: "Một click là có link cá nhân. Dán vào Zalo, Facebook, nhóm phụ huynh — bất cứ đâu.",
+      text: "Một click là có link cá nhân. Dễ dàng dán vào Zalo, Facebook, nhóm phụ huynh hay bất cứ đâu để bắt đầu kiếm hoa hồng.",
     },
     {
       title: "Thanh toán hàng tuần",
