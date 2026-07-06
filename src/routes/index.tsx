@@ -18,6 +18,7 @@ import {
 import howWorksSchool from "../assets/howworks-0.jpg";
 import howWorksPartner from "../assets/howworks-1.jpg";
 import logoMark from "../assets/logo-mark.png";
+import vuongPhoto from "../assets/vuong.png.asset.json";
 import { FloatingContact } from "../components/FloatingContact";
 
 export const Route = createFileRoute("/")({
@@ -36,6 +37,7 @@ type TeamMember = {
   bio: string;
   initials: string;
   gradient: string;
+  photo?: string;
   email?: string;
   linkedin?: string;
   phone?: string;
@@ -48,6 +50,7 @@ const team: TeamMember[] = [
     bio: "Ex-Shopify, VP tại Spiraledge Inc. Hơn 10 năm kinh nghiệm xây dựng và mở rộng doanh nghiệp thương mại điện tử & marketing hiệu quả.",
     initials: "MV",
     gradient: "var(--grad-brand)",
+    photo: vuongPhoto.url,
     email: "nuyenaffluence.md@gmail.com",
     linkedin: "https://www.linkedin.com/in/vuongnm/",
   },
@@ -440,12 +443,20 @@ function Team() {
               className="group relative overflow-hidden rounded-3xl border border-border bg-white p-7 transition-all hover:-translate-y-1 hover:shadow-lift"
             >
               <div className="flex items-center gap-4">
-                <div
-                  className="grid h-16 w-16 shrink-0 place-items-center rounded-2xl font-display text-[22px] font-extrabold text-white shadow-lift"
-                  style={{ background: m.gradient }}
-                >
-                  {m.initials}
-                </div>
+                {m.photo ? (
+                  <img
+                    src={m.photo}
+                    alt={m.name}
+                    className="h-16 w-16 shrink-0 rounded-2xl object-cover shadow-lift"
+                  />
+                ) : (
+                  <div
+                    className="grid h-16 w-16 shrink-0 place-items-center rounded-2xl font-display text-[22px] font-extrabold text-white shadow-lift"
+                    style={{ background: m.gradient }}
+                  >
+                    {m.initials}
+                  </div>
+                )}
                 <div className="min-w-0">
                   <h3 className="truncate text-[17px] font-bold tracking-tight">{m.name}</h3>
                   <p className="mt-0.5 text-[13px] font-semibold text-primary">{m.role}</p>
