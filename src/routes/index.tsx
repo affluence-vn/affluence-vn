@@ -20,8 +20,14 @@ import howWorksPartner from "../assets/howworks-1.jpg";
 import logoMark from "../assets/logo-mark.png";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    links: [
+      { rel: "preload", as: "image", href: logoMark, fetchpriority: "high" },
+    ],
+  }),
   component: AboutPage,
 });
+
 
 type TeamMember = {
   name: string;
