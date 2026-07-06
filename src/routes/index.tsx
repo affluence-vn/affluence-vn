@@ -324,7 +324,7 @@ function WhatWeDo() {
       text: "Tên lớp, hoa hồng mỗi học viên, thành phố mục tiêu. Không cần website, không cần kỹ thuật.",
     },
     {
-      title: "Cộng tác viên địa phương lan rộng",
+      title: "Mạng lưới Publisher đa dạng",
       text: "Mạng lưới cộng tác viên chia sẻ lớp của bạn đến đúng người đang cần.",
     },
     {
