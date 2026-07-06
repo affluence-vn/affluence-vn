@@ -600,44 +600,6 @@ function Location() {
                 <p className="mt-1.5 text-[14.5px] leading-[1.7] text-ink-soft">{address}</p>
               </div>
             </div>
-            <div className="mt-6 space-y-3 border-t border-border pt-6">
-              <a
-                href="tel:+84869688153"
-                className="mt-2.5 block text-[14px] font-semibold text-ink-soft transition-colors hover:text-primary"
-              >
-                Hotline: 0869 688 153 (08:00 – 17:30, hằng ngày)
-              </a>
-              <a
-                href="https://zalo.me/0868688153"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-2.5 block text-[14px] font-semibold text-ink-soft transition-colors hover:text-primary"
-              >
-                Zalo: 0868 688 153 (Hỗ trợ 24/7)
-              </a>
-              <a
-                href="https://t.me/Uyenadc"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-2.5 block text-[14px] font-semibold text-ink-soft transition-colors hover:text-primary"
-              >
-                Telegram: @Uyenadc
-              </a>
-              <a
-                href="mailto:nuyenaffluence.md@gmail.com"
-                className="mt-2.5 block text-[14px] font-semibold text-ink-soft transition-colors hover:text-primary"
-              >
-                nuyenaffluence.md@gmail.com
-              </a>
-              <a
-                href="https://www.linkedin.com/in/vuongnm/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-2.5 block text-[14px] font-semibold text-ink-soft transition-colors hover:text-primary"
-              >
-                linkedin.com/in/vuongnm
-              </a>
-            </div>
             <a
               href={directions}
               target="_blank"
