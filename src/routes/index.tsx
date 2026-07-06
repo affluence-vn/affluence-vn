@@ -181,10 +181,6 @@ function Hero() {
       </div>
 
       <div className="relative mx-auto max-w-4xl px-6 text-center">
-        <span className="mb-7 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary-subtle px-4 py-1.5 text-[12px] font-bold text-primary">
-          <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-          Về Affluence · Agency marketing giáo dục
-        </span>
         <h1 className="text-[42px] font-extrabold leading-[1.05] tracking-tight md:text-[64px]">
           Chúng tôi kết nối{" "}
           <span className="text-gradient-brand">giáo dục</span> với{" "}
