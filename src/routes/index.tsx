@@ -7,12 +7,16 @@ import {
   Handshake,
   BarChart3,
   ShieldCheck,
-  Rocket,
   Heart,
   Mail,
   Linkedin,
   MapPin,
+  Phone,
+  Users,
+  Check,
 } from "lucide-react";
+import howWorksSchool from "../assets/howworks-0.jpg";
+import howWorksPartner from "../assets/howworks-1.jpg";
 
 export const Route = createFileRoute("/")({
   component: AboutPage,
@@ -26,17 +30,19 @@ type TeamMember = {
   gradient: string;
   email?: string;
   linkedin?: string;
+  phone?: string;
 };
 
 const team: TeamMember[] = [
   {
-    name: "Nguyễn Minh Vượng",
+    name: "Nguyễn Minh Vương",
     role: "Đồng sáng lập & Giám đốc điều hành",
     bio: "Cựu lãnh đạo tại Shopify, từng giữ vị trí Phó Chủ tịch (VP) tại Spiraledge Inc. Hơn 10 năm kinh nghiệm xây dựng và mở rộng doanh nghiệp thương mại điện tử & marketing hiệu quả.",
     initials: "MV",
     gradient: "var(--grad-brand)",
     email: "vuongnguyen710+affluence@gmail.com",
     linkedin: "https://www.linkedin.com/in/vuongnm/",
+    phone: "0969 135 192",
   },
   {
     name: "Nguyễn Thị Tú Uyên",
@@ -44,6 +50,7 @@ const team: TeamMember[] = [
     bio: "Quản lý affiliate dày dặn kinh nghiệm, chuyên xây dựng và vận hành mạng lưới publisher mang lại chuyển đổi thật cho đối tác giáo dục.",
     initials: "TU",
     gradient: "var(--grad-sunrise)",
+    phone: "0869 688 153",
   },
 ];
 
@@ -257,65 +264,134 @@ function Mission() {
 }
 
 function WhatWeDo() {
-  const items = [
+  const schoolFeatures = [
     {
-      icon: GraduationCap,
-      title: "Kết nối trường & trung tâm",
-      text: "Chúng tôi làm việc trực tiếp với các đơn vị giáo dục để hiểu chương trình, đối tượng học viên và mục tiêu tuyển sinh.",
-      grad: "var(--grad-brand)",
+      title: "Đăng lớp trong 5 phút",
+      text: "Tên lớp, hoa hồng mỗi học viên, thành phố mục tiêu. Không cần website, không cần kỹ thuật.",
     },
     {
-      icon: Handshake,
-      title: "Mở rộng mạng lưới publisher",
-      text: "Từ KOLs giáo dục, blog phụ huynh đến các trang review — chúng tôi tuyển chọn publisher phù hợp cho từng chiến dịch.",
-      grad: "var(--grad-sunrise)",
+      title: "Cộng tác viên địa phương lan rộng",
+      text: "Mạng lưới cộng tác viên chia sẻ lớp của bạn đến đúng người đang cần.",
     },
     {
-      icon: Rocket,
-      title: "Vận hành chiến dịch affiliate",
-      text: "Thiết lập tracking, creative, hoa hồng và tối ưu liên tục — bạn chỉ trả tiền khi có học viên thật đăng ký.",
-      grad: "var(--grad-mint)",
+      title: "Chỉ trả khi có học viên thật",
+      text: "Mỗi đăng ký được xác minh. Bạn trả hoa hồng sau khi có người thật đăng ký — không phải trước.",
+    },
+  ];
+
+  const partnerFeatures = [
+    {
+      title: "Chọn lớp phù hợp audience",
+      text: "Xem lớp đang tuyển sinh, hoa hồng và khu vực. Không cần đăng ký để xem trước.",
     },
     {
-      icon: BarChart3,
-      title: "Báo cáo & tối ưu bằng dữ liệu",
-      text: "Dashboard thời gian thực, phân tích cohort, và đề xuất tối ưu dựa trên hành vi chuyển đổi thực tế.",
-      grad: "var(--grad-sky)",
+      title: "Lấy link riêng trong vài giây",
+      text: "Một click là có link cá nhân. Dán vào Zalo, Facebook, nhóm phụ huynh — bất cứ đâu.",
+    },
+    {
+      title: "Thanh toán hàng tuần",
+      text: "Hoa hồng cộng ngay khi đăng ký xác nhận. Thanh toán ra hàng tuần — không chờ cuối tháng.",
     },
   ];
 
   return (
-    <section id="hoat-dong" className="bg-white py-24 md:py-28">
+    <section id="hoat-dong" className="bg-page py-24 md:py-28">
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.14em] text-primary">
-            Chúng tôi làm gì
+            Cách hoạt động
           </p>
           <h2 className="text-[34px] font-bold leading-[1.15] tracking-tight md:text-[42px]">
-            Một nền tảng, hai phía cùng thắng.
+            Hai bên, cùng có lợi.
           </h2>
-          <p className="mt-5 text-[16px] leading-[1.75] text-ink-soft">
-            Affluence là cây cầu chuyên biệt giữa nhà giáo dục và người có khả năng đưa học viên
-            đến với họ.
-          </p>
         </div>
 
-        <div className="mt-14 grid gap-5 md:grid-cols-2">
-          {items.map(({ icon: Icon, title, text, grad }) => (
+        <div className="mt-14 grid gap-7">
+          {/* Trường / trung tâm — ảnh trái, nội dung phải */}
+          <div className="grid overflow-hidden rounded-2xl border border-border bg-white md:grid-cols-[0.85fr_1.15fr] md:items-center">
             <div
-              key={title}
-              className="group relative overflow-hidden rounded-2xl border border-border bg-white p-7 transition-all hover:-translate-y-1 hover:shadow-lift"
+              className="relative flex min-h-[260px] items-center justify-center md:min-h-[340px]"
+              style={{ background: "linear-gradient(135deg,#EEF2FF 0%,#ffffff 100%)" }}
             >
-              <div
-                className="grid h-12 w-12 place-items-center rounded-xl shadow-lift transition-transform group-hover:scale-105"
-                style={{ background: grad }}
-              >
-                <Icon className="h-5 w-5 text-white" strokeWidth={2.2} />
-              </div>
-              <h3 className="mt-5 text-[19px] font-bold tracking-tight">{title}</h3>
-              <p className="mt-2 text-[15px] leading-[1.7] text-ink-soft">{text}</p>
+              <img
+                src={howWorksSchool}
+                alt=""
+                className="absolute inset-0 h-full w-full object-cover opacity-30"
+              />
+              <span className="relative inline-flex items-center gap-2 rounded-full border border-primary/20 bg-white/90 px-4 py-1.5 text-[13px] font-bold text-primary">
+                <GraduationCap className="h-4 w-4" />
+                Dành cho trường / trung tâm
+              </span>
             </div>
-          ))}
+            <div className="p-8 md:py-9 md:pl-2 md:pr-10">
+              <h3 className="text-[22px] font-extrabold tracking-tight">
+                Đăng lớp, để mạng lưới lấp đầy
+              </h3>
+              <div className="mt-5 grid gap-4">
+                {schoolFeatures.map((f) => (
+                  <div key={f.title} className="flex items-start gap-3">
+                    <span className="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-emerald-100">
+                      <Check className="h-3 w-3 text-emerald-600" strokeWidth={3.5} />
+                    </span>
+                    <div>
+                      <p className="text-[14px] font-bold text-ink">{f.title}</p>
+                      <p className="mt-0.5 text-[13px] leading-[1.6] text-ink-soft">{f.text}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <a
+                href="#lien-he"
+                className="mt-6 inline-flex items-center gap-1.5 text-[13px] font-bold text-primary transition-colors hover:text-primary-hover"
+              >
+                Đăng lớp miễn phí
+                <ArrowRight className="h-3.5 w-3.5" />
+              </a>
+            </div>
+          </div>
+
+          {/* Cộng tác viên — nội dung trái, ảnh phải */}
+          <div className="grid overflow-hidden rounded-2xl border border-border bg-white md:grid-cols-[1.15fr_0.85fr] md:items-center">
+            <div className="order-2 p-8 md:order-1 md:py-9 md:pl-10 md:pr-2">
+              <h3 className="text-[22px] font-extrabold tracking-tight">
+                Chia sẻ một link, hoa hồng tự về
+              </h3>
+              <div className="mt-5 grid gap-4">
+                {partnerFeatures.map((f) => (
+                  <div key={f.title} className="flex items-start gap-3">
+                    <span className="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-emerald-100">
+                      <Check className="h-3 w-3 text-emerald-600" strokeWidth={3.5} />
+                    </span>
+                    <div>
+                      <p className="text-[14px] font-bold text-ink">{f.title}</p>
+                      <p className="mt-0.5 text-[13px] leading-[1.6] text-ink-soft">{f.text}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <a
+                href="#lien-he"
+                className="mt-6 inline-flex items-center gap-1.5 text-[13px] font-bold text-emerald-600 transition-colors hover:text-emerald-700"
+              >
+                Trở thành cộng tác viên
+                <ArrowRight className="h-3.5 w-3.5" />
+              </a>
+            </div>
+            <div
+              className="relative order-1 flex min-h-[260px] items-center justify-center md:order-2 md:min-h-[340px]"
+              style={{ background: "linear-gradient(135deg,#D1FAE5 0%,#ffffff 100%)" }}
+            >
+              <img
+                src={howWorksPartner}
+                alt=""
+                className="absolute inset-0 h-full w-full object-cover opacity-30"
+              />
+              <span className="relative inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-white/90 px-4 py-1.5 text-[13px] font-bold text-emerald-700">
+                <Users className="h-4 w-4" />
+                Dành cho cộng tác viên
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -359,6 +435,15 @@ function Team() {
               </div>
               <p className="mt-5 text-[14.5px] leading-[1.7] text-ink-soft">{m.bio}</p>
               <div className="mt-5 flex gap-2 border-t border-border pt-4">
+                {m.phone && (
+                  <a
+                    href={`tel:+84${m.phone.replace(/\D/g, "").replace(/^0/, "")}`}
+                    aria-label={`Điện thoại ${m.name}`}
+                    className="grid h-9 w-9 place-items-center rounded-full border border-border text-ink-soft transition-colors hover:bg-primary-subtle hover:text-primary"
+                  >
+                    <Phone className="h-4 w-4" />
+                  </a>
+                )}
                 {m.email && (
                   <a
                     href={`mailto:${m.email}`}
@@ -468,19 +553,7 @@ function Location() {
   return (
     <section id="vi-tri" className="bg-white py-24 md:py-28">
       <div className="mx-auto max-w-6xl px-6">
-        <div className="mx-auto max-w-2xl text-center">
-          <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.14em] text-primary">
-            Địa chỉ
-          </p>
-          <h2 className="text-[34px] font-bold leading-[1.15] tracking-tight md:text-[42px]">
-            Tìm chúng tôi tại <span className="text-gradient-brand">Sài Gòn</span>.
-          </h2>
-          <p className="mt-5 text-[16px] leading-[1.75] text-ink-soft">
-            Văn phòng Affluence nằm ở quận Tân Bình — luôn sẵn sàng đón đối tác ghé thăm.
-          </p>
-        </div>
-
-        <div className="mt-14 grid gap-8 md:grid-cols-[1fr_1.4fr] md:items-stretch">
+        <div className="grid gap-8 md:grid-cols-[1fr_1.4fr] md:items-stretch">
           <div className="flex flex-col justify-center rounded-3xl border border-border bg-secondary/40 p-8">
             <div className="flex items-start gap-3">
               <div className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-grad-brand shadow-lift">
@@ -492,6 +565,13 @@ function Location() {
               </div>
             </div>
             <div className="mt-6 space-y-3 border-t border-border pt-6">
+              <a
+                href="tel:+84969135192"
+                className="flex items-center gap-2.5 text-[14px] font-semibold text-ink-soft transition-colors hover:text-primary"
+              >
+                <Phone className="h-4 w-4 shrink-0" />
+                0969 135 192
+              </a>
               <a
                 href="mailto:vuongnguyen710+affluence@gmail.com"
                 className="flex items-center gap-2.5 text-[14px] font-semibold text-ink-soft transition-colors hover:text-primary"
@@ -553,8 +633,15 @@ function Footer() {
             Liên hệ
           </p>
           <a
-            href="mailto:vuongnguyen710+affluence@gmail.com"
+            href="tel:+84969135192"
             className="flex items-center gap-2 text-[13px] font-medium text-ink-soft transition-colors hover:text-primary"
+          >
+            <Phone className="h-4 w-4 shrink-0" />
+            0969 135 192
+          </a>
+          <a
+            href="mailto:vuongnguyen710+affluence@gmail.com"
+            className="mt-2.5 flex items-center gap-2 text-[13px] font-medium text-ink-soft transition-colors hover:text-primary"
           >
             <Mail className="h-4 w-4 shrink-0" />
             vuongnguyen710+affluence@gmail.com
