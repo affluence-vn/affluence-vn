@@ -344,7 +344,7 @@ function WhatWeDo() {
     },
     {
       title: "Thanh toán hàng tuần",
-      text: "Hoa hồng cộng ngay khi đăng ký xác nhận. Thanh toán ra hàng tuần — không chờ cuối tháng.",
+      text: "Hoa hồng được ghi nhận ngay khi đơn đăng ký hợp lệ. Đối soát minh bạch qua hệ thống. Thanh toán hằng tuần, không cần chờ đến cuối tháng.",
     },
   ];
 
