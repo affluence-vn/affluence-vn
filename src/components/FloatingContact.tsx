@@ -3,6 +3,7 @@ import { Mail, Phone, X } from "lucide-react";
 
 const PHONE_TEL = "+84869688153";
 const PHONE_LOCAL = "0869688153";
+const ZALO_LOCAL = "0868688153";
 const EMAIL = "nuyenaffluence.md@gmail.com";
 
 /** Zalo brand mark — speech bubble with a "Z" */
@@ -45,7 +46,7 @@ const OPTIONS: ContactOption[] = [
   { label: "Email", href: `mailto:${EMAIL}`, Icon: Mail, bg: "bg-[#2563eb]" },
   {
     label: "Zalo",
-    href: `https://zalo.me/${PHONE_LOCAL}`,
+    href: `https://zalo.me/${ZALO_LOCAL}`,
     external: true,
     Icon: ZaloIcon,
     bg: "bg-[#0068FF]",
