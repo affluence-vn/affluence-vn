@@ -336,7 +336,7 @@ function WhatWeDo() {
   const partnerFeatures = [
     {
       title: "Chọn lớp phù hợp audience",
-      text: "Xem lớp đang tuyển sinh, hoa hồng và khu vực. Không cần đăng ký để xem trước.",
+      text: "Cập nhật liên tục thông tin lớp mới đang tuyển sinh, hoa hồng hấp dẫn và khu vực rộng khắp Việt Nam.",
     },
     {
       title: "Lấy link riêng trong vài giây",
