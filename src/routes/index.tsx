@@ -18,6 +18,7 @@ import {
 import howWorksSchool from "../assets/howworks-0.jpg";
 import howWorksPartner from "../assets/howworks-1.jpg";
 import logoMark from "../assets/logo-mark.png";
+import { FloatingContact } from "../components/FloatingContact";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -91,6 +92,7 @@ function AboutPage() {
       <CTA />
       <Location />
       <Footer />
+      <FloatingContact />
     </div>
   );
 }
