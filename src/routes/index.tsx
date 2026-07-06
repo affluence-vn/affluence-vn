@@ -363,10 +363,11 @@ function WhatWeDo() {
               </div>
               <a
                 href="#lien-he"
-                className="mt-6 inline-flex items-center gap-1.5 text-[13px] font-bold text-primary transition-colors hover:text-primary-hover"
+                className="group relative mt-7 inline-flex items-center gap-3 self-start rounded-full bg-primary px-7 py-3.5 text-[14px] font-bold text-primary-foreground shadow-lift transition-all duration-300 hover:bg-primary-hover hover:shadow-glow active:scale-95"
               >
-                Đăng lớp miễn phí
-                <ArrowRight className="h-3.5 w-3.5" />
+                <span>Đăng lớp miễn phí</span>
+                <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                <span className="absolute inset-0 rounded-full bg-white opacity-0 transition-opacity duration-300 group-hover:opacity-10" aria-hidden="true" />
               </a>
             </div>
           </div>
