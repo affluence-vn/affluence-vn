@@ -266,16 +266,16 @@ function Mission() {
 
               {/* Two-way connector 1 */}
               <div className="flex flex-1 items-center justify-center px-1">
-                <svg className="h-6 w-full text-primary/30" viewBox="0 0 120 12" preserveAspectRatio="none">
+                <svg className="h-8 w-full text-primary/70" viewBox="0 0 120 16" preserveAspectRatio="none">
                   <defs>
-                    <marker id="arrowL1" markerWidth="8" markerHeight="8" refX="2" refY="4" orient="auto" markerUnits="strokeWidth">
-                      <path d="M8 0 L0 4 L8 8 z" fill="currentColor" />
+                    <marker id="arrowL1" markerWidth="10" markerHeight="10" refX="2" refY="5" orient="auto" markerUnits="strokeWidth">
+                      <path d="M10 0 L0 5 L10 10 z" fill="currentColor" />
                     </marker>
-                    <marker id="arrowR1" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="strokeWidth">
-                      <path d="M0 0 L8 4 L0 8 z" fill="currentColor" />
+                    <marker id="arrowR1" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+                      <path d="M0 0 L10 5 L0 10 z" fill="currentColor" />
                     </marker>
                   </defs>
-                  <line x1="6" y1="6" x2="114" y2="6" stroke="currentColor" strokeWidth="2" markerStart="url(#arrowL1)" markerEnd="url(#arrowR1)" />
+                  <line x1="8" y1="8" x2="112" y2="8" stroke="currentColor" strokeWidth="3" markerStart="url(#arrowL1)" markerEnd="url(#arrowR1)" />
                 </svg>
               </div>
 
@@ -289,16 +289,16 @@ function Mission() {
 
               {/* Two-way connector 2 */}
               <div className="flex flex-1 items-center justify-center px-1">
-                <svg className="h-6 w-full text-primary/30" viewBox="0 0 120 12" preserveAspectRatio="none">
+                <svg className="h-8 w-full text-primary/70" viewBox="0 0 120 16" preserveAspectRatio="none">
                   <defs>
-                    <marker id="arrowL2" markerWidth="8" markerHeight="8" refX="2" refY="4" orient="auto" markerUnits="strokeWidth">
-                      <path d="M8 0 L0 4 L8 8 z" fill="currentColor" />
+                    <marker id="arrowL2" markerWidth="10" markerHeight="10" refX="2" refY="5" orient="auto" markerUnits="strokeWidth">
+                      <path d="M10 0 L0 5 L10 10 z" fill="currentColor" />
                     </marker>
-                    <marker id="arrowR2" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="strokeWidth">
-                      <path d="M0 0 L8 4 L0 8 z" fill="currentColor" />
+                    <marker id="arrowR2" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+                      <path d="M0 0 L10 5 L0 10 z" fill="currentColor" />
                     </marker>
                   </defs>
-                  <line x1="6" y1="6" x2="114" y2="6" stroke="currentColor" strokeWidth="2" markerStart="url(#arrowL2)" markerEnd="url(#arrowR2)" />
+                  <line x1="8" y1="8" x2="112" y2="8" stroke="currentColor" strokeWidth="3" markerStart="url(#arrowL2)" markerEnd="url(#arrowR2)" />
                 </svg>
               </div>
 
