@@ -549,29 +549,29 @@ function CTA() {
               Dù bạn là trường học, trung tâm giáo dục, publisher hay mạng lưới affiliate — chúng tôi luôn sẵn sàng lắng nghe và kết nối để cùng phát triển.
             </p>
           </div>
-          <div className="flex flex-col gap-3 md:items-end">
+          <div className="flex items-center justify-center gap-3 md:justify-end">
             <a
               href="mailto:nuyenaffluence.md@gmail.com"
-              className="inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-white px-5 py-3.5 text-[13px] font-bold text-primary shadow-lift transition-transform hover:-translate-y-0.5 sm:text-sm md:w-auto md:rounded-full md:px-7"
+              aria-label="Email Affluence"
+              className="grid h-12 w-12 place-items-center rounded-full bg-white text-primary shadow-lift transition-transform hover:-translate-y-0.5"
             >
-              <span className="break-all text-center">nuyenaffluence.md@gmail.com</span>
-              <ArrowRight className="h-4 w-4 shrink-0" />
+              <Mail className="h-5 w-5" />
             </a>
             <a
               href="tel:+84869688153"
-              className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-white/40 bg-white/10 px-7 py-3.5 text-sm font-bold text-white backdrop-blur transition-colors hover:bg-white/20 md:w-auto"
+              aria-label="Gọi điện Affluence"
+              className="grid h-12 w-12 place-items-center rounded-full border border-white/40 bg-white/10 text-white backdrop-blur transition-colors hover:bg-white/20"
             >
-              <Phone className="h-4 w-4" />
-              Hotline · Zalo · Telegram: 0869 688 153
+              <Phone className="h-5 w-5" />
             </a>
             <a
               href="https://www.linkedin.com/in/vuongnm/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-white/40 bg-white/10 px-7 py-3.5 text-sm font-bold text-white backdrop-blur transition-colors hover:bg-white/20 md:w-auto"
+              aria-label="LinkedIn Affluence"
+              className="grid h-12 w-12 place-items-center rounded-full border border-white/40 bg-white/10 text-white backdrop-blur transition-colors hover:bg-white/20"
             >
-              <Linkedin className="h-4 w-4" />
-              Kết nối trên LinkedIn
+              <Linkedin className="h-5 w-5" />
             </a>
           </div>
         </div>
