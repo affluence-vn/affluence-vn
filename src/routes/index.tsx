@@ -548,9 +548,8 @@ function CTA() {
           </div>
         </div>
       </div>
-
-      </div>
     </section>
+
   );
 }
 
