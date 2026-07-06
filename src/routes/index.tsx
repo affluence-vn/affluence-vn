@@ -206,23 +206,17 @@ function Hero() {
           <span className="text-gradient-brand">tăng trưởng</span> thật.
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-[17px] leading-[1.75] text-ink-soft">
-          Affluence là agency performance marketing chuyên biệt cho ngành giáo dục — kết nối
-          trường học, trung tâm với hệ sinh thái publisher và mạng lưới affiliate hàng đầu Việt
-          Nam. Chúng tôi giúp bạn tuyển sinh hiệu quả, minh bạch và bền vững.
+          Affluence là agency performance marketing chuyên sâu trong lĩnh vực giáo dục — kết nối
+          trường học, trung tâm với hệ sinh thái publisher và mạng lưới affiliate rộng khắp Việt
+          Nam. Tuyển sinh hiệu quả. Chi phí tối ưu. Đồng hành tăng trưởng.
         </p>
         <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
           <a
-            href="#team"
+            href="#lien-he"
             className="inline-flex items-center gap-2 rounded-full bg-grad-brand px-7 py-3.5 text-sm font-bold text-white shadow-lift transition-transform hover:-translate-y-0.5"
           >
-            Gặp đội ngũ của chúng tôi
+            Nhận tư vấn ngay
             <ArrowRight className="h-4 w-4" />
-          </a>
-          <a
-            href="#hoat-dong"
-            className="inline-flex items-center gap-2 rounded-full border border-border bg-white px-7 py-3.5 text-sm font-bold text-ink transition-colors hover:bg-secondary"
-          >
-            Chúng tôi làm gì
           </a>
         </div>
       </div>
