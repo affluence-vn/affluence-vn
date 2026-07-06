@@ -49,8 +49,8 @@ const team: TeamMember[] = [
     gradient: "var(--grad-brand)",
     email: "vuongnguyen710+affluence@gmail.com",
     linkedin: "https://www.linkedin.com/in/vuongnm/",
-    },
   },
+
   {
     name: "Nguyễn Thị Tú Uyên",
     role: "Trưởng phòng Affiliate",
