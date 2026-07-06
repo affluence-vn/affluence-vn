@@ -652,13 +652,6 @@ function Footer() {
             Liên hệ
           </p>
           <a
-            href="tel:+84969135192"
-            className="flex items-center gap-2 text-[13px] font-medium text-ink-soft transition-colors hover:text-primary"
-          >
-            <Phone className="h-4 w-4 shrink-0" />
-            0969 135 192
-          </a>
-          <a
             href="mailto:vuongnguyen710+affluence@gmail.com"
             className="mt-2.5 flex items-center gap-2 text-[13px] font-medium text-ink-soft transition-colors hover:text-primary"
           >
