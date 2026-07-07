@@ -247,7 +247,7 @@ function Mission() {
             thật.
           </p>
           <p className="mt-4 text-[16px] leading-[1.8] text-ink-soft">
-            Từ trung tâm ngoại ngữ nhỏ đến hệ thống giáo dục quy mô quốc tế lớn, Affluencer đồng hành
+            Từ trung tâm ngoại ngữ nhỏ đến hệ thống giáo dục quy mô quốc tế lớn, Affluence đồng hành
             cùng bạn trên mọi chặng đường phát triển.
           </p>
         </div>
@@ -280,7 +280,7 @@ function Mission() {
                 </svg>
               </div>
 
-              {/* Affluencer */}
+              {/* Affluence */}
               <div className="flex flex-col items-center text-center">
                 <div className="grid h-14 w-14 place-items-center rounded-2xl bg-white shadow-lift ring-1 ring-border">
                   <img
@@ -291,7 +291,7 @@ function Mission() {
                     className="h-8 w-8 object-contain"
                   />
                 </div>
-                <div className="mt-3 text-[14px] font-bold text-ink">Affluencer</div>
+                <div className="mt-3 text-[14px] font-bold text-ink">Affluence</div>
               </div>
 
               {/* Two-way connector 2 */}
