@@ -267,16 +267,12 @@ function Mission() {
               {/* Two-way connector 1 */}
               <div className="flex flex-1 items-center justify-center px-1">
                 <svg className="h-8 w-full text-ink" viewBox="0 0 120 20" preserveAspectRatio="none">
-                  <defs>
-                    <marker id="arrowR1" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
-                      <path d="M0 0 L6 3 L0 6 z" fill="currentColor" />
-                    </marker>
-                    <marker id="arrowL1" markerWidth="6" markerHeight="6" refX="1" refY="3" orient="auto" markerUnits="strokeWidth">
-                      <path d="M6 0 L0 3 L6 6 z" fill="currentColor" />
-                    </marker>
-                  </defs>
-                  <line x1="8" y1="7" x2="108" y2="7" stroke="currentColor" strokeWidth="2.5" markerEnd="url(#arrowR1)" />
-                  <line x1="112" y1="13" x2="12" y2="13" stroke="currentColor" strokeWidth="2.5" markerEnd="url(#arrowL1)" />
+                  {/* Top line: left -> right */}
+                  <line x1="6" y1="6" x2="104" y2="6" stroke="currentColor" strokeWidth="2.5" />
+                  <polygon points="104,3 114,6 104,9" fill="currentColor" />
+                  {/* Bottom line: right -> left */}
+                  <line x1="114" y1="14" x2="16" y2="14" stroke="currentColor" strokeWidth="2.5" />
+                  <polygon points="16,11 6,14 16,17" fill="currentColor" />
                 </svg>
               </div>
 
@@ -297,16 +293,12 @@ function Mission() {
               {/* Two-way connector 2 */}
               <div className="flex flex-1 items-center justify-center px-1">
                 <svg className="h-8 w-full text-ink" viewBox="0 0 120 20" preserveAspectRatio="none">
-                  <defs>
-                    <marker id="arrowR2" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
-                      <path d="M0 0 L6 3 L0 6 z" fill="currentColor" />
-                    </marker>
-                    <marker id="arrowL2" markerWidth="6" markerHeight="6" refX="1" refY="3" orient="auto" markerUnits="strokeWidth">
-                      <path d="M6 0 L0 3 L6 6 z" fill="currentColor" />
-                    </marker>
-                  </defs>
-                  <line x1="8" y1="7" x2="108" y2="7" stroke="currentColor" strokeWidth="2.5" markerEnd="url(#arrowR2)" />
-                  <line x1="112" y1="13" x2="12" y2="13" stroke="currentColor" strokeWidth="2.5" markerEnd="url(#arrowL2)" />
+                  {/* Top line: left -> right */}
+                  <line x1="6" y1="6" x2="104" y2="6" stroke="currentColor" strokeWidth="2.5" />
+                  <polygon points="104,3 114,6 104,9" fill="currentColor" />
+                  {/* Bottom line: right -> left */}
+                  <line x1="114" y1="14" x2="16" y2="14" stroke="currentColor" strokeWidth="2.5" />
+                  <polygon points="16,11 6,14 16,17" fill="currentColor" />
                 </svg>
               </div>
 
