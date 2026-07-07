@@ -247,8 +247,8 @@ function Mission() {
             thật.
           </p>
           <p className="mt-4 text-[16px] leading-[1.8] text-ink-soft">
-            Từ một trung tâm ngoại ngữ ở Hà Nội đến chuỗi trường quốc tế toàn quốc — chúng tôi
-            đồng hành với bạn ở mọi giai đoạn tăng trưởng.
+            Từ trung tâm ngoại ngữ nhỏ đến hệ thống giáo dục quy mô quốc tế lớn, Affluencer đồng hành
+            cùng bạn trên mọi chặng đường phát triển.
           </p>
         </div>
 
