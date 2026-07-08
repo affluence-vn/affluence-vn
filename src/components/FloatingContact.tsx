@@ -3,8 +3,8 @@ import { Mail, Phone, X } from "lucide-react";
 
 const PHONE_TEL = "+84869688153";
 const PHONE_LOCAL = "0869688153";
-const ZALO_LOCAL = "0868688153";
-const EMAIL = "nuyenaffluence.md@gmail.com";
+const ZALO_LOCAL = "0869688153";
+const EMAIL = "uyen@affluence.vn";
 
 /** Zalo brand mark — speech bubble with a "Z" */
 export function ZaloIcon({ className }: { className?: string }) {
@@ -103,12 +103,8 @@ export function FloatingContact() {
         aria-expanded={open}
         className="relative grid h-16 w-16 place-items-center rounded-full bg-grad-brand text-white shadow-glow transition-transform duration-200 hover:scale-105 active:scale-95"
       >
-        {!open && (
-          <span className="absolute inset-0 animate-ping rounded-full bg-[#7c3aed]/50" />
-        )}
-        <span className="relative">
-          {open ? <X className="h-7 w-7" /> : <Phone className="h-7 w-7" />}
-        </span>
+        {!open && <span className="absolute inset-0 animate-ping rounded-full bg-[#7c3aed]/50" />}
+        <span className="relative">{open ? <X className="h-7 w-7" /> : <Phone className="h-7 w-7" />}</span>
       </button>
     </div>
   );
