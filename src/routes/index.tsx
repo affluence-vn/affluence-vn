@@ -47,7 +47,7 @@ const team: TeamMember[] = [
     initials: "MV",
     gradient: "var(--grad-brand)",
     photo: vuongPhoto.url,
-    email: "nuyenaffluence.md@gmail.com",
+    email: "uyen@affluence.vn",
     linkedin: "https://www.linkedin.com/in/vuongnm/",
   },
 
