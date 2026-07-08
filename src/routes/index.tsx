@@ -47,7 +47,7 @@ const team: TeamMember[] = [
     initials: "MV",
     gradient: "var(--grad-brand)",
     photo: vuongPhoto.url,
-    email: "uyen@affluence.vn",
+    email: "hello@affluence.vn",
     linkedin: "https://www.linkedin.com/in/vuongnm/",
   },
 
@@ -57,6 +57,8 @@ const team: TeamMember[] = [
     bio: "Quản lý affiliate dày dặn kinh nghiệm, chuyên xây dựng và vận hành mạng lưới publisher mang lại chuyển đổi thật cho đối tác giáo dục.",
     initials: "TU",
     gradient: "var(--grad-sunrise)",
+    email: "uyen@affluence.vn",
+
     linkedin: "https://www.linkedin.com/in/uyen-nguyen-2bb2b2420/",
   },
 ];
