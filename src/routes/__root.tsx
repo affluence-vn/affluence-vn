@@ -72,41 +72,70 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   );
 }
 
+const SITE_URL = "https://affluence.vn";
+const SITE_TITLE = "Affluence — Kết nối trường học & mạng lưới marketers";
+const SITE_DESCRIPTION =
+  "Affluence là agency marketing kết nối trường học, trung tâm giáo dục với các nhà quảng cáo và mạng lưới affiliate hàng đầu Việt Nam.";
+const SITE_OG_IMAGE =
+  "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b98eafda-8b39-4dc8-86d9-caa8d72ad6d2/id-preview-7fbb241e--4a93ac13-5758-4d05-bc43-3a8cda8ee022.lovable.app-1783307493206.png";
+
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Affluence — Kết nối trường học & mạng lưới marketers" },
-      {
-        name: "description",
-        content:
-          "Affluence là agency marketing kết nối trường học, trung tâm giáo dục với các nhà xuất bản và mạng lưới affiliate hàng đầu Việt Nam.",
-      },
+      { title: SITE_TITLE },
+      { name: "description", content: SITE_DESCRIPTION },
       { name: "author", content: "Affluence" },
-      { property: "og:title", content: "Affluence — Kết nối trường học & mạng lưới marketers" },
-      {
-        property: "og:description",
-        content:
-          "Chúng tôi kết nối trường học và trung tâm giáo dục với publisher & mạng lưới affiliate. Hiệu quả đo được, tăng trưởng thật.",
-      },
+      { property: "og:title", content: SITE_TITLE },
+      { property: "og:description", content: SITE_DESCRIPTION },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: SITE_URL },
+      { property: "og:site_name", content: "Affluence" },
+      { property: "og:image", content: SITE_OG_IMAGE },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Affluence — Kết nối trường học & mạng lưới marketers" },
-      { name: "description", content: "Affluence là agency marketing kết nối trường học, trung tâm giáo dục với các nhà quảng cáo và mạng lưới affiliate hàng đầu Việt Nam." },
-      { property: "og:description", content: "Affluence là agency marketing kết nối trường học, trung tâm giáo dục với các nhà quảng cáo và mạng lưới affiliate hàng đầu Việt Nam." },
-      { name: "twitter:description", content: "Affluence là agency marketing kết nối trường học, trung tâm giáo dục với các nhà quảng cáo và mạng lưới affiliate hàng đầu Việt Nam." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b98eafda-8b39-4dc8-86d9-caa8d72ad6d2/id-preview-7fbb241e--4a93ac13-5758-4d05-bc43-3a8cda8ee022.lovable.app-1783307493206.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b98eafda-8b39-4dc8-86d9-caa8d72ad6d2/id-preview-7fbb241e--4a93ac13-5758-4d05-bc43-3a8cda8ee022.lovable.app-1783307493206.png" },
+      { name: "twitter:title", content: SITE_TITLE },
+      { name: "twitter:description", content: SITE_DESCRIPTION },
+      { name: "twitter:image", content: SITE_OG_IMAGE },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
+      { rel: "canonical", href: SITE_URL },
       { rel: "icon", href: "/favicon.png", type: "image/png" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Be+Vietnam+Pro:wght@500;600;700;800&display=swap",
+      },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "Affluence",
+          alternateName: "Affluence Agency",
+          url: SITE_URL,
+          logo: `${SITE_URL}/favicon.png`,
+          description: SITE_DESCRIPTION,
+          sameAs: [
+            "https://www.linkedin.com/in/vuongnm/",
+            "https://www.linkedin.com/in/uyen-nguyen-2bb2b2420/",
+          ],
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: "Affluence",
+          url: SITE_URL,
+          inLanguage: "vi-VN",
+          publisher: { "@type": "Organization", name: "Affluence" },
+        }),
       },
     ],
   }),
