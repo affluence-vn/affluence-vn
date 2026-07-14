@@ -54,7 +54,7 @@ const team: TeamMember[] = [
 
   {
     name: "Nguyễn Thị Tú Uyên",
-    role: "Trưởng phòng Affiliate",
+    role: "Founder",
     bio: "Quản lý affiliate dày dặn kinh nghiệm, chuyên xây dựng và vận hành mạng lưới publisher mang lại chuyển đổi thật cho đối tác giáo dục.",
     initials: "TU",
     gradient: "var(--grad-sunrise)",
