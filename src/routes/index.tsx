@@ -18,6 +18,7 @@ import howWorksSchool from "../assets/howworks-0.jpg";
 import howWorksPartner from "../assets/howworks-1.jpg";
 import logoMark from "../assets/logo-mark.png";
 import vuongPhoto from "../assets/vuong.png.asset.json";
+import uyenPhoto from "../assets/uyen.png.asset.json";
 import { FloatingContact, TelegramIcon, ZaloIcon } from "../components/FloatingContact";
 
 export const Route = createFileRoute("/")({
@@ -57,8 +58,8 @@ const team: TeamMember[] = [
     bio: "Quản lý affiliate dày dặn kinh nghiệm, chuyên xây dựng và vận hành mạng lưới publisher mang lại chuyển đổi thật cho đối tác giáo dục.",
     initials: "TU",
     gradient: "var(--grad-sunrise)",
+    photo: uyenPhoto.url,
     email: "uyen@affluence.vn",
-
     linkedin: "https://www.linkedin.com/in/uyen-nguyen-2bb2b2420/",
   },
 ];
