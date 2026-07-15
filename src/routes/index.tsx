@@ -212,7 +212,7 @@ function Hero() {
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-[17px] leading-[1.75] text-ink-soft">
           Affluence là agency performance marketing chuyên sâu trong lĩnh vực giáo dục — kết nối trường học, trung tâm
-          với hệ sinh thái publisher và mạng lưới affiliate rộng khắp Việt Nam. Tuyển sinh hiệu quả. Chi phí tối ưu.
+          với hệ sinh thái publisher và mạng lưới influencer rộng khắp Việt Nam. Tuyển sinh hiệu quả. Chi phí tối ưu.
           Đồng hành tăng trưởng.
         </p>
         <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
