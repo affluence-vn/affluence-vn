@@ -1,7 +1,9 @@
 import { useEffect, useRef } from "react";
-import { createFileRoute } from "@tanstack/react-router";
+import { Link, createFileRoute } from "@tanstack/react-router";
 import {
   ArrowRight,
+  BookOpen,
+  Clock,
   GraduationCap,
   Target,
   Handshake,
@@ -19,7 +21,9 @@ import howWorksPartner from "../assets/howworks-1.jpg";
 import logoMark from "../assets/logo-mark.png";
 import vuongPhoto from "../assets/vuong.png.asset.json";
 import uyenPhoto from "../assets/uyen.png.asset.json";
-import { FloatingContact, TelegramIcon, ZaloIcon } from "../components/FloatingContact";
+import { FloatingContact } from "../components/FloatingContact";
+import { Footer, Nav } from "../components/SiteChrome";
+import { blogPosts, formatPostDate } from "../lib/blog";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -91,60 +95,12 @@ function AboutPage() {
       <WhatWeDo />
       <Team />
       <Values />
+      <BlogSection />
       <CTA />
       <Location />
       <Footer />
       <FloatingContact />
     </div>
-  );
-}
-
-function Logo() {
-  return (
-    <div className="flex items-center gap-2">
-      <img
-        src={logoMark}
-        alt="Affluence logo"
-        width={28}
-        height={28}
-        fetchPriority="high"
-        decoding="async"
-        className="h-7 w-7 object-contain"
-      />
-
-      <span className="text-[17px] font-extrabold tracking-tight">Affluence</span>
-    </div>
-  );
-}
-
-function Nav() {
-  return (
-    <nav className="sticky top-0 z-50 border-b border-border/70 bg-white/80 backdrop-blur-xl">
-      <div className="mx-auto flex h-[62px] max-w-6xl items-center justify-between px-6">
-        <Logo />
-        <div className="hidden items-center gap-7 md:flex">
-          <a href="#su-menh" className="text-[13px] font-semibold text-ink-soft hover:text-ink">
-            Sứ mệnh
-          </a>
-          <a href="#hoat-dong" className="text-[13px] font-semibold text-ink-soft hover:text-ink">
-            Chúng tôi làm gì
-          </a>
-          <a href="#team" className="text-[13px] font-semibold text-ink-soft hover:text-ink">
-            Đội ngũ
-          </a>
-          <a href="#lien-he" className="text-[13px] font-semibold text-ink-soft hover:text-ink">
-            Liên hệ
-          </a>
-        </div>
-        <a
-          href="#lien-he"
-          className="inline-flex items-center gap-1.5 rounded-full bg-grad-brand px-5 py-2 text-[13px] font-bold text-white shadow-lift transition-transform hover:-translate-y-0.5"
-        >
-          Hợp tác ngay
-          <ArrowRight className="h-3.5 w-3.5" />
-        </a>
-      </div>
-    </nav>
   );
 }
 
@@ -542,6 +498,70 @@ function Values() {
   );
 }
 
+function BlogSection() {
+  const posts = blogPosts.slice(0, 3);
+
+  return (
+    <section id="blog" className="bg-page py-24 md:py-28">
+      <div className="mx-auto max-w-6xl px-6">
+        <div className="mx-auto max-w-2xl text-center">
+          <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.14em] text-primary">Blog</p>
+          <h2 className="text-[34px] font-bold leading-[1.15] tracking-tight md:text-[42px]">
+            Kiến thức <span className="text-gradient-brand">giáo dục</span> mới nhất.
+          </h2>
+          <p className="mt-5 text-[16px] leading-[1.75] text-ink-soft">
+            Cẩm nang dành cho phụ huynh về hành trình học tiếng Anh của con — từ độ tuổi bắt đầu đến cách chọn trung tâm
+            phù hợp.
+          </p>
+        </div>
+
+        <div className="mt-12 grid gap-6 md:grid-cols-3">
+          {posts.map((post) => (
+            <Link
+              key={post.slug}
+              to="/blog/$slug"
+              params={{ slug: post.slug }}
+              className="group flex flex-col overflow-hidden rounded-3xl border border-border bg-white transition-all hover:-translate-y-1 hover:shadow-lift"
+            >
+              <div className="relative flex h-36 items-center justify-center" style={{ background: post.gradient }}>
+                <BookOpen className="h-10 w-10 text-white/90" strokeWidth={1.5} />
+                <span className="absolute top-4 left-4 rounded-full bg-white/90 px-3 py-1 text-[11.5px] font-bold text-ink">
+                  {post.category}
+                </span>
+              </div>
+              <div className="flex flex-1 flex-col p-6">
+                <div className="flex items-center gap-3 text-[12px] font-medium text-ink-mute">
+                  <span>{formatPostDate(post.date)}</span>
+                  <span className="inline-flex items-center gap-1">
+                    <Clock className="h-3.5 w-3.5" />
+                    {post.readingTime}
+                  </span>
+                </div>
+                <h3 className="mt-2.5 text-[16.5px] font-bold leading-[1.4] tracking-tight">{post.title}</h3>
+                <p className="mt-2 flex-1 text-[13.5px] leading-[1.7] text-ink-soft">{post.excerpt}</p>
+                <span className="mt-4 inline-flex items-center gap-1.5 text-[13.5px] font-bold text-primary">
+                  Đọc bài viết
+                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </span>
+              </div>
+            </Link>
+          ))}
+        </div>
+
+        <div className="mt-10 text-center">
+          <Link
+            to="/blog"
+            className="inline-flex items-center gap-2 rounded-full border border-border bg-white px-7 py-3.5 text-[14px] font-bold text-ink shadow-soft transition-all hover:-translate-y-0.5 hover:shadow-lift"
+          >
+            Xem tất cả bài viết
+            <ArrowRight className="h-4 w-4" />
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function CTA() {
   return (
     <section id="lien-he" className="px-4 py-20 sm:px-6 md:py-28">
@@ -634,76 +654,5 @@ function Location() {
         </div>
       </div>
     </section>
-  );
-}
-
-function Footer() {
-  return (
-    <footer className="border-t border-border bg-white">
-      <div className="mx-auto grid max-w-6xl gap-8 px-6 py-12 md:grid-cols-3">
-        <div>
-          <Logo />
-          <p className="mt-3 max-w-md text-[13px] leading-relaxed text-ink-soft">
-            Agency performance marketing chuyên sâu trong lĩnh vực giáo dục Việt Nam.
-          </p>
-        </div>
-        <div>
-          <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.14em] text-ink-mute">Liên hệ</p>
-          <a
-            href="mailto:Hello@affluence.vn"
-            className="mt-2.5 flex items-center gap-2 text-[13px] font-medium text-ink-soft transition-colors hover:text-primary"
-          >
-            <Mail className="h-4 w-4 shrink-0" />
-            Hello@affluence.vn
-          </a>
-          <a
-            href="tel:+84869688153"
-            className="mt-2.5 flex items-center gap-2 text-[13px] font-medium text-ink-soft transition-colors hover:text-primary"
-          >
-            <Phone className="h-4 w-4 shrink-0" />
-            Hotline: 0869 688 153 (08:00 – 17:30, hằng ngày)
-          </a>
-          <a
-            href="https://zalo.me/0869688153"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-2.5 flex items-center gap-2 text-[13px] font-medium text-ink-soft transition-colors hover:text-primary"
-          >
-            <ZaloIcon className="h-4 w-4 shrink-0" />
-            Zalo: 0869 688 153 (Hỗ trợ 24/7)
-          </a>
-          <a
-            href="https://t.me/Uyenadc"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-2.5 flex items-center gap-2 text-[13px] font-medium text-ink-soft transition-colors hover:text-primary"
-          >
-            <TelegramIcon className="h-4 w-4 shrink-0" />
-            Telegram: @Uyenadc
-          </a>
-          <a
-            href="https://www.linkedin.com/in/vuongnm/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-2.5 flex items-center gap-2 text-[13px] font-medium text-ink-soft transition-colors hover:text-primary"
-          >
-            <Linkedin className="h-4 w-4 shrink-0" />
-            linkedin.com/in/vuongnm
-          </a>
-        </div>
-        <div>
-          <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.14em] text-ink-mute">Địa chỉ</p>
-          <p className="flex items-start gap-2 text-[13px] leading-relaxed text-ink-soft">
-            <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
-            166/2D Đ. Trần Văn Dư, Tân Bình, Hồ Chí Minh 70000, Vietnam
-          </p>
-        </div>
-      </div>
-      <div className="border-t border-border">
-        <div className="mx-auto max-w-6xl px-6 py-5 text-center text-[13px] text-ink-mute">
-          © {new Date().getFullYear()} Affluence. Bản quyền thuộc về Affluence Vietnam.
-        </div>
-      </div>
-    </footer>
   );
 }

@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
+import { blogPosts } from "../lib/blog";
 
 const BASE_URL = "https://affluence.vn";
 
@@ -15,6 +16,14 @@ export const Route = createFileRoute("/sitemap.xml")({
       GET: async () => {
         const entries: SitemapEntry[] = [
           { path: "/", changefreq: "weekly", priority: "1.0" },
+          { path: "/blog", changefreq: "weekly", priority: "0.8" },
+          ...blogPosts.map(
+            (post): SitemapEntry => ({
+              path: `/blog/${post.slug}`,
+              changefreq: "monthly",
+              priority: "0.6",
+            }),
+          ),
         ];
 
         const urls = entries.map((e) =>
