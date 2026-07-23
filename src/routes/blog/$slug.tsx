@@ -130,17 +130,17 @@ function BlogPostPage() {
           <div className="pointer-events-none absolute -top-16 -right-16 h-56 w-56 rounded-full bg-white/15 blur-3xl" />
           <div className="relative">
             <h2 className="text-[22px] font-extrabold leading-[1.25] tracking-tight text-white md:text-[26px]">
-              Bạn là trường học hoặc trung tâm tiếng Anh?
+              {post.cta?.heading ?? "Bạn là trường học hoặc trung tâm tiếng Anh?"}
             </h2>
             <p className="mt-3 max-w-xl text-[14.5px] leading-[1.7] text-white/85">
-              Affluence giúp bạn tuyển sinh hiệu quả qua mạng lưới publisher khắp Việt Nam — chỉ trả phí khi có học viên
-              thật.
+              {post.cta?.body ??
+                "Affluence giúp bạn tuyển sinh hiệu quả qua mạng lưới publisher khắp Việt Nam — chỉ trả phí khi có học viên thật."}
             </p>
             <a
-              href="/#lien-he"
+              href={post.cta?.href ?? "/#lien-he"}
               className="mt-6 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-[14px] font-bold text-primary shadow-lift transition-transform hover:-translate-y-0.5"
             >
-              Nhận tư vấn miễn phí
+              {post.cta?.label ?? "Nhận tư vấn miễn phí"}
               <ArrowRight className="h-4 w-4" />
             </a>
           </div>

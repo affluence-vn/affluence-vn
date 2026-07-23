@@ -4,6 +4,13 @@ export type BlogSection = {
   list?: string[];
 };
 
+export type BlogCta = {
+  heading: string;
+  body: string;
+  label: string;
+  href: string;
+};
+
 export type BlogPost = {
   slug: string;
   title: string;
@@ -13,9 +20,177 @@ export type BlogPost = {
   readingTime: string;
   gradient: string;
   sections: BlogSection[];
+  cta?: BlogCta; // optional per-post CTA; falls back to the default B2B block when absent
 };
 
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "cau-truc-de-thi-toeic-4-ky-nang-2-ky-nang",
+    title: "Cấu trúc đề thi TOEIC 4 kỹ năng & 2 kỹ năng mới nhất 2026",
+    excerpt:
+      "Đề TOEIC gồm những phần nào, bao nhiêu câu và chấm điểm ra sao? Giải thích rõ cấu trúc TOEIC 2 kỹ năng (Nghe – Đọc) và 4 kỹ năng (thêm Nói – Viết) theo format hiện hành.",
+    category: "Luyện thi TOEIC",
+    date: "2026-07-23",
+    readingTime: "7 phút đọc",
+    gradient: "var(--grad-sky)",
+    sections: [
+      {
+        paragraphs: [
+          "Trước khi bắt đầu luyện thi TOEIC, có một việc nên làm đầu tiên mà nhiều người bỏ qua: hiểu rõ đề thi gồm những gì. Biết cấu trúc đề không chỉ giúp bạn phân bổ thời gian ôn hợp lý, mà còn tránh cảm giác hoảng khi lần đầu ngồi vào phòng thi.",
+          "Bài viết này mô tả đầy đủ cấu trúc đề thi TOEIC theo format hiện hành — cả bản 2 kỹ năng (Nghe – Đọc) quen thuộc lẫn bản 4 kỹ năng (thêm Nói – Viết) — kèm số câu, thời gian và cách tính điểm, để bạn hình dung được mình sẽ đối mặt với điều gì.",
+        ],
+      },
+      {
+        heading: "TOEIC 2 kỹ năng: Nghe và Đọc (Listening & Reading)",
+        paragraphs: [
+          "Đây là bài thi TOEIC phổ biến nhất, thường được nhắc đến khi ai đó nói 'thi TOEIC'. Bài gồm 200 câu trắc nghiệm, làm trong 120 phút, thang điểm từ 10 đến 990 — trong đó kỹ năng Nghe và kỹ năng Đọc mỗi bên tối đa 495 điểm. Đề chia làm 7 phần (part):",
+        ],
+        list: [
+          "Part 1 – Mô tả tranh (6 câu): nghe và chọn câu mô tả đúng bức ảnh.",
+          "Part 2 – Hỏi đáp (25 câu): nghe một câu hỏi và chọn câu trả lời phù hợp.",
+          "Part 3 – Đoạn hội thoại (39 câu): nghe hội thoại ngắn giữa 2–3 người rồi trả lời.",
+          "Part 4 – Bài nói ngắn (30 câu): nghe một đoạn độc thoại như thông báo, quảng cáo.",
+          "Part 5 – Hoàn thành câu (30 câu): chọn từ điền vào chỗ trống, kiểm tra ngữ pháp và từ vựng.",
+          "Part 6 – Hoàn thành đoạn văn (16 câu): điền từ vào một đoạn văn hoàn chỉnh.",
+          "Part 7 – Đọc hiểu (54 câu): đọc email, bài báo, thông báo... và trả lời câu hỏi.",
+        ],
+      },
+      {
+        paragraphs: [
+          "Bốn phần đầu (Part 1–4, 100 câu) là kỹ năng Nghe, kéo dài khoảng 45 phút theo băng. Ba phần sau (Part 5–7, 100 câu) là kỹ năng Đọc, bạn tự phân bổ trong 75 phút còn lại. Vì thời gian phần Đọc do bạn tự quản, biết trước cấu trúc giúp bạn không sa đà vào Part 7 mà bỏ lỡ những câu dễ ăn điểm ở Part 5.",
+        ],
+      },
+      {
+        heading: "TOEIC 4 kỹ năng: thêm Nói và Viết (Speaking & Writing)",
+        paragraphs: [
+          "Bản 4 kỹ năng giữ nguyên bài Nghe – Đọc ở trên và bổ sung hai bài thi riêng: Nói (Speaking) và Viết (Writing), thường làm trên máy tính và tách biệt với bài Nghe – Đọc.",
+        ],
+        list: [
+          "Speaking: 11 câu hỏi, khoảng 20 phút, thang điểm 0–200. Gồm đọc to đoạn văn, mô tả tranh, trả lời câu hỏi và nêu – bảo vệ ý kiến.",
+          "Writing: 8 câu hỏi, khoảng 60 phút, thang điểm 0–200. Gồm viết câu theo tranh, trả lời email và viết bài luận nêu quan điểm.",
+        ],
+      },
+      {
+        paragraphs: [
+          "Nói cách khác, khi nghe cụm 'TOEIC 4 kỹ năng', thực chất bạn thi hai bài: một bài Nghe – Đọc và một bài Nói – Viết, mỗi bài có thang điểm và chứng chỉ riêng.",
+        ],
+      },
+      {
+        heading: "Cách tính điểm và mức điểm nên nhắm tới",
+        paragraphs: [
+          "Bài Nghe – Đọc cho điểm từ 10 đến 990. Điểm không phải là số câu đúng nhân lên, mà quy đổi theo bảng chuẩn của đơn vị tổ chức, nên hai người cùng số câu đúng vẫn có thể lệch nhau đôi chút. Một vài mốc để bạn định hình mục tiêu:",
+        ],
+        list: [
+          "450–600: đủ cho nhiều yêu cầu tốt nghiệp đại học và một số vị trí công việc cơ bản.",
+          "600–750: mức phổ biến mà nhà tuyển dụng mong đợi cho công việc có dùng tiếng Anh.",
+          "750–990: lợi thế rõ rệt khi xin việc, xét học bổng hoặc thăng tiến.",
+        ],
+      },
+      {
+        paragraphs: [
+          "Với bài Nói – Viết, mỗi kỹ năng chấm từ 0 đến 200 và quy về các mức trình độ. Chứng chỉ TOEIC — cả hai loại — có hiệu lực 2 năm kể từ ngày thi.",
+        ],
+      },
+      {
+        heading: "Nên thi 2 kỹ năng hay 4 kỹ năng?",
+        paragraphs: [
+          "Câu trả lời phụ thuộc vào mục tiêu. Nếu bạn cần TOEIC để tốt nghiệp hoặc ứng tuyển ở nơi chỉ yêu cầu điểm Nghe – Đọc, bản 2 kỹ năng là đủ và tiết kiệm hơn. Nếu công việc hoặc chương trình học yêu cầu chứng minh cả khả năng nói và viết, bạn sẽ cần bản 4 kỹ năng.",
+          "Lời khuyên thực tế: kiểm tra kỹ yêu cầu cụ thể của trường hoặc công ty trước khi đăng ký, tránh thi thừa hoặc thiếu kỹ năng rồi phải thi lại.",
+        ],
+      },
+      {
+        heading: "Ôn theo cấu trúc, đừng ôn dàn trải",
+        paragraphs: [
+          "Khi đã nắm cấu trúc, việc ôn trở nên có trọng tâm hơn. Phần Nghe (Part 3–4) và phần Đọc (Part 7) chiếm nhiều câu nhất và cũng là nơi dễ mất điểm nhất, nên xứng đáng được đầu tư thời gian nhiều hơn Part 1 hay Part 5. Thay vì làm đề tràn lan, hãy luyện từng phần đến khi ổn định rồi mới ghép thành đề hoàn chỉnh.",
+          "Một lộ trình rõ ràng, có người chấm chữa và cam kết mức điểm đầu ra sẽ rút ngắn đáng kể thời gian so với tự mò mẫm — nhất là ở hai kỹ năng Nói và Viết, vốn rất khó tự đánh giá.",
+        ],
+      },
+    ],
+    cta: {
+      heading: "Muốn đạt đúng mức điểm TOEIC bạn cần?",
+      body: "TAEC luyện thi TOEIC 2 và 4 kỹ năng, cam kết đầu ra bằng văn bản, với 5 cơ sở tại TP.HCM và lớp học online. Đăng ký học thử miễn phí để được xếp lộ trình theo đúng trình độ hiện tại.",
+      label: "Học thử miễn phí cùng TAEC",
+      href: "https://taec.affluence.vn/",
+    },
+  },
+  {
+    slug: "dang-ky-thi-toeic-lich-thi-le-phi-tphcm",
+    title: "Đăng ký thi TOEIC 2026: lịch thi, lệ phí, địa điểm tại TP.HCM",
+    excerpt:
+      "Thi TOEIC ở đâu tại TP.HCM, lệ phí bao nhiêu, đăng ký thế nào và cần chuẩn bị gì? Hướng dẫn đăng ký thi TOEIC 2026 từ A đến Z cho người thi lần đầu.",
+    category: "Luyện thi TOEIC",
+    date: "2026-07-23",
+    readingTime: "6 phút đọc",
+    gradient: "var(--grad-sunrise)",
+    sections: [
+      {
+        paragraphs: [
+          "Bạn đã ôn TOEIC một thời gian và muốn đăng ký thi, nhưng chưa rõ thi ở đâu, lệ phí bao nhiêu và thủ tục thế nào? Bài viết này đi qua toàn bộ quy trình đăng ký thi TOEIC tại TP.HCM năm 2026, dành cho người thi lần đầu.",
+          "Lưu ý trước: lịch thi và lệ phí do đơn vị tổ chức công bố và có thể thay đổi theo từng thời điểm, nên hãy xem các con số dưới đây là mức tham khảo và kiểm tra lại trên trang chính thức trước khi đăng ký.",
+        ],
+      },
+      {
+        heading: "Thi TOEIC ở đâu tại TP.HCM?",
+        paragraphs: [
+          "Tại Việt Nam, kỳ thi TOEIC chính thức được tổ chức bởi IIG Việt Nam — đại diện của ETS, đơn vị ra đề TOEIC. Ở TP.HCM có nhiều điểm thi được ủy quyền, thường nằm ở khu vực trung tâm và các quận đông dân. Bạn đăng ký qua IIG và được xếp vào điểm thi theo lịch còn chỗ.",
+          "Ngoài ra, một số trường đại học và trung tâm liên kết cũng tổ chức thi nội bộ. Nhưng nếu cần chứng chỉ TOEIC có giá trị rộng rãi để xin việc hay du học, nên thi qua kỳ thi chính thức của IIG.",
+        ],
+      },
+      {
+        heading: "Lệ phí thi TOEIC bao nhiêu?",
+        paragraphs: [
+          "Lệ phí phụ thuộc vào loại bài thi bạn chọn:",
+        ],
+        list: [
+          "TOEIC 2 kỹ năng (Nghe – Đọc): mức tham khảo khoảng trên dưới 1.000.000đ.",
+          "TOEIC 4 kỹ năng (thêm Nói – Viết): cao hơn đáng kể do phải thi thêm hai kỹ năng.",
+        ],
+      },
+      {
+        paragraphs: [
+          "Vì mức phí được cập nhật theo từng năm, hãy xác nhận con số chính xác trên trang của IIG Việt Nam tại thời điểm bạn đăng ký. Thi lại sẽ đóng phí lại từ đầu, nên chỉ nên đăng ký khi đã tự tin đạt mức điểm mục tiêu.",
+        ],
+      },
+      {
+        heading: "Các bước đăng ký",
+        list: [
+          "Bước 1: Chọn loại bài thi (2 hay 4 kỹ năng) theo đúng yêu cầu của trường hoặc công ty.",
+          "Bước 2: Vào trang đăng ký của IIG Việt Nam, chọn ngày thi và điểm thi còn chỗ.",
+          "Bước 3: Điền thông tin cá nhân đúng như trên CCCD — sai tên sẽ ảnh hưởng đến chứng chỉ.",
+          "Bước 4: Thanh toán lệ phí theo hướng dẫn và giữ lại biên nhận.",
+          "Bước 5: Nhận email xác nhận lịch thi và địa điểm, in hoặc lưu lại để mang đi thi.",
+        ],
+      },
+      {
+        heading: "Ngày thi cần chuẩn bị gì?",
+        list: [
+          "CCCD/CMND bản gốc còn hạn — bắt buộc, không có sẽ không được vào phòng thi.",
+          "Có mặt sớm khoảng 30 phút để làm thủ tục và ổn định tinh thần.",
+          "Bút chì, tẩy nếu thi trên giấy; nếu thi trên máy, nên làm quen trước với giao diện.",
+          "Ngủ đủ giấc đêm trước — điều này thường quan trọng hơn việc cố ôn thêm một đề.",
+        ],
+      },
+      {
+        heading: "Chứng chỉ có hiệu lực bao lâu?",
+        paragraphs: [
+          "Chứng chỉ TOEIC có giá trị trong 2 năm kể từ ngày thi. Vì vậy nên căn thời điểm thi sao cho chứng chỉ còn hiệu lực đúng lúc bạn cần dùng — chẳng hạn khi nộp hồ sơ tốt nghiệp hoặc xin việc — tránh thi quá sớm rồi hết hạn ngay trước khi cần.",
+        ],
+      },
+      {
+        heading: "Đừng đăng ký thi khi chưa sẵn sàng",
+        paragraphs: [
+          "Sai lầm tốn kém nhất là đăng ký thi theo phong trào rồi bước vào phòng thi khi kiến thức còn chưa chắc. Mỗi lần thi là một lần đóng phí, nên cách tiết kiệm nhất thật ra là chuẩn bị chắc chắn để chỉ thi một lần là đạt luôn mức điểm cần.",
+          "Nếu bạn còn cách mục tiêu một khoảng, một khóa luyện thi có lộ trình rõ ràng và thi thử sát đề sẽ giúp bạn biết chính xác khi nào nên đăng ký thi thật.",
+        ],
+      },
+    ],
+    cta: {
+      heading: "Chưa chắc đã đạt điểm mục tiêu?",
+      body: "TAEC luyện thi TOEIC cam kết đầu ra, có thi thử sát đề để bạn biết mình đã sẵn sàng hay chưa trước khi đóng lệ phí thi thật. 5 cơ sở tại TP.HCM và lớp học online.",
+      label: "Nhận tư vấn lộ trình TOEIC",
+      href: "https://taec.affluence.vn/",
+    },
+  },
   {
     slug: "cach-tuyen-sinh-cho-trung-tam-tieng-anh",
     title: "7 kênh tuyển sinh cho trung tâm tiếng Anh — kênh nào đáng tiền năm 2026?",
