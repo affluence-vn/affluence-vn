@@ -17,6 +17,79 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "cach-tuyen-sinh-cho-trung-tam-tieng-anh",
+    title: "7 kênh tuyển sinh cho trung tâm tiếng Anh — kênh nào đáng tiền năm 2026?",
+    excerpt:
+      "Tờ rơi hết thời chưa? Facebook ads còn hiệu quả không? Một bài tổng kết thẳng thắn về 7 kênh tuyển sinh phổ biến, kênh nào nên giữ, kênh nào nên nghĩ lại.",
+    category: "Dành cho trung tâm",
+    date: "2026-07-22",
+    readingTime: "8 phút đọc",
+    gradient: "var(--grad-warm)",
+    sections: [
+      {
+        paragraphs: [
+          "Cứ đến mùa tuyển sinh, câu hỏi muôn thuở của các chủ trung tâm lại quay về: năm nay đổ ngân sách vào đâu? Ai cũng có một danh sách kênh na ná nhau, nhưng ít ai ngồi tính sòng phẳng xem mỗi kênh thực sự mang về bao nhiêu học viên trên mỗi đồng bỏ ra.",
+          "Làm việc với hàng chục trung tâm lớn nhỏ, chúng tôi có cơ hội nhìn thấy con số thật của khá nhiều mô hình. Dưới đây là tổng kết thẳng thắn về 7 kênh phổ biến nhất — không kênh nào là 'thần thánh', nhưng có kênh đang bị đánh giá quá cao, và có kênh bị bỏ quên một cách đáng tiếc.",
+        ],
+      },
+      {
+        heading: "1. Truyền miệng — vẫn là vua, nhưng đừng để nó tự nhiên",
+        paragraphs: [
+          "Hỏi 10 trung tâm đang sống khỏe thì 8 nơi sẽ nói học viên mới đến chủ yếu từ giới thiệu. Chi phí gần như bằng không, tỷ lệ chốt cao nhất trong mọi kênh — vì phụ huynh tin phụ huynh hơn tin quảng cáo.",
+          "Vấn đề là đa số để kênh này chạy 'tự nhiên'. Trong khi chỉ cần một cơ chế nhỏ — giảm học phí tháng cho phụ huynh giới thiệu thành công, quà cho bé có bạn vào học — là dòng giới thiệu có thể tăng gấp rưỡi. Kênh tốt nhất của bạn xứng đáng có một chương trình tử tế, thay vì chỉ là lời cảm ơn.",
+        ],
+      },
+      {
+        heading: "2. Facebook Ads — hiệu quả thật, đốt tiền cũng thật",
+        paragraphs: [
+          "Vẫn là kênh chủ lực của phần lớn trung tâm, và vẫn ra số nếu làm đúng. Nhưng chi phí mỗi lead đã tăng đều qua từng năm, và lead từ form quảng cáo thì chất lượng ngày càng loãng — điền cho vui, số sai, 'em hỏi cho chị em'.",
+          "Kinh nghiệm chung: Facebook Ads chỉ đáng tiền khi đội sale gọi lead trong vòng 15 phút và có kịch bản chăm rõ ràng. Ads giỏi mà chăm lead kém thì tiền vẫn trôi — chi tiết hơn ở bài về 6 lý do quảng cáo không ra học viên.",
+        ],
+      },
+      {
+        heading: "3. Google — đón đúng người đang tìm",
+        paragraphs: [
+          "Người gõ 'trung tâm tiếng Anh cho bé quận Tân Bình' là người đang thực sự cần — khác hẳn người lướt Facebook bị quảng cáo chen ngang. Ba việc đáng làm theo thứ tự: hoàn thiện Google Business Profile (miễn phí, ra khách khu vực tốt đến bất ngờ), viết nội dung trả lời đúng câu hỏi phụ huynh hay tìm, và nếu có ngân sách thì chạy Google Ads cho các từ khóa địa phương.",
+        ],
+      },
+      {
+        heading: "4. TikTok — thương hiệu tốt, ra số chậm",
+        paragraphs: [
+          "Video lớp học vui nhộn, cô giáo duyên dáng có thể kéo trăm nghìn lượt xem và làm tên tuổi trung tâm phủ rất nhanh. Nhưng từ lượt xem đến phụ huynh xuống tiền là quãng đường dài. Nên xem TikTok là kênh xây thương hiệu dài hạn — đáng làm nếu có người làm nội dung ổn định — chứ đừng kỳ vọng nó gánh chỉ tiêu tuyển sinh quý này.",
+        ],
+      },
+      {
+        heading: "5. Tờ rơi và sự kiện tại trường — cũ nhưng chưa hết thời",
+        paragraphs: [
+          "Nghe 'cổ điển' nhưng với mô hình trung tâm phục vụ bán kính 3–5km quanh cơ sở, một buổi sự kiện tại trường tiểu học lân cận hay một đợt phát tờ rơi kèm mã học thử miễn phí vẫn ra học viên đều — chi phí lại thấp. Điểm mấu chốt: phải có lời mời cụ thể (học thử miễn phí, kiểm tra trình độ) chứ không chỉ là tờ giấy giới thiệu chung chung.",
+        ],
+      },
+      {
+        heading: "6. Affiliate / cộng tác viên — kênh bị bỏ quên nhiều nhất",
+        paragraphs: [
+          "Mô hình rất đơn giản: mạng lưới cộng tác viên — thường chính là các phụ huynh, giáo viên, người có nhóm Zalo, Facebook cộng đồng — chia sẻ thông tin lớp học của bạn, và bạn chỉ trả hoa hồng khi có học viên đăng ký thật.",
+          "Cái hay nằm ở chữ 'thật': không trả tiền cho lượt hiển thị hay cú click, chỉ trả cho kết quả. Rủi ro đốt ngân sách gần như bằng không. Đây chính là mô hình Affluence đang vận hành — và theo chúng tôi là kênh đáng thử nhất với trung tâm không có đội marketing riêng. Bài giải thích chi tiết về affiliate cho trường học có ngay trên blog này.",
+        ],
+      },
+      {
+        heading: "7. Data cũ — mỏ vàng đang phủ bụi",
+        paragraphs: [
+          "Danh sách phụ huynh từng hỏi mà chưa đăng ký, học viên cũ đã nghỉ, bé từng học thử... nằm im trong file Excel của hầu hết các trung tâm. Mỗi mùa tuyển sinh, một vòng gọi lại kèm ưu đãi quay lại thường ra vài học viên với chi phí gần bằng không. Trước khi đổ thêm tiền tìm người mới, hãy tận dụng hết những người đã từng biết đến mình.",
+        ],
+      },
+      {
+        heading: "Vậy chia ngân sách thế nào?",
+        list: [
+          "Giữ nền: chương trình giới thiệu có cơ chế rõ ràng + chăm data cũ — chi phí thấp nhất, làm trước tiên.",
+          "Kênh chủ lực: chọn MỘT kênh trả phí làm thật tốt (Facebook hoặc Google tùy tệp khách) thay vì rải mỏng ba bốn kênh.",
+          "Kênh không rủi ro: thêm affiliate/CTV vì chỉ trả khi có học viên thật — không ăn vào ngân sách cố định.",
+          "Dài hạn: TikTok/nội dung nếu có nguồn lực, xác định 6 tháng mới thấy quả.",
+          "Và quan trọng nhất: đo mỗi kênh ra bao nhiêu học viên thật mỗi tháng — không đo thì mọi quyết định chỉ là cảm giác.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "do-tuoi-vang-hoc-tieng-anh",
     title: "Mấy tuổi cho con học tiếng Anh là vừa? Chuyện 'độ tuổi vàng'",
     excerpt:
@@ -59,6 +132,65 @@ export const blogPosts: BlogPost[] = [
         heading: "Chốt lại",
         paragraphs: [
           "Không có con số thần kỳ nào đúng cho mọi đứa trẻ đâu. Nguyên tắc chỉ có một: bắt đầu sớm thì thuận lợi, nhưng phải nhẹ nhàng, vui vẻ và đều đặn. Một đứa trẻ thích tiếng Anh sẽ tự chạy xa hơn mọi lộ trình mà người lớn vẽ sẵn — việc của bố mẹ chỉ là đừng làm con hết thích.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "chi-phi-marketing-giao-duc",
+    title: "Chi phí marketing giáo dục: một học viên mới thực sự tốn bao nhiêu?",
+    excerpt:
+      "Nhiều trung tâm biết mình chi bao nhiêu cho quảng cáo, nhưng ít nơi trả lời được câu hỏi quan trọng hơn: mỗi học viên mới tốn bao nhiêu tiền để có được? Cách tính và các con số tham khảo.",
+    category: "Dành cho trung tâm",
+    date: "2026-07-16",
+    readingTime: "7 phút đọc",
+    gradient: "var(--grad-lime)",
+    sections: [
+      {
+        paragraphs: [
+          "Thử hỏi một chủ trung tâm: tháng rồi chi bao nhiêu cho marketing? Đa số trả lời được ngay. Hỏi tiếp: vậy mỗi học viên mới tốn bao nhiêu để có được? Không khí thường im lặng hẳn.",
+          "Mà đó mới là con số quyết định trung tâm sống hay chật vật. Bài này hướng dẫn cách tính nó trong 15 phút, kèm vài khoảng tham khảo từ thực tế các chiến dịch chúng tôi vận hành.",
+        ],
+      },
+      {
+        heading: "CAC — con số một dòng nhưng nói lên tất cả",
+        paragraphs: [
+          "Chi phí sở hữu một học viên (Customer Acquisition Cost) tính rất đơn giản: lấy tổng chi marketing trong kỳ — tiền quảng cáo, hoa hồng, lương nhân sự marketing, chi phí sự kiện — chia cho số học viên mới đóng phí trong kỳ đó.",
+          "Ví dụ: tháng 6 chi tổng cộng 30 triệu, có 15 học viên mới ghi danh. CAC = 2 triệu/học viên. Giờ đặt cạnh học phí: nếu một học viên đóng trung bình 2,5 triệu/tháng và học 6 tháng, doanh thu vòng đời là 15 triệu — chi 2 triệu để thu 15 triệu, ổn. Nhưng nếu học viên chỉ ở lại 2 tháng thì bức tranh khác hẳn.",
+        ],
+      },
+      {
+        heading: "Đừng nhầm chi phí mỗi lead với chi phí mỗi học viên",
+        paragraphs: [
+          "Đây là cái bẫy phổ biến nhất. Chạy quảng cáo ra lead giá 50–150 nghìn, nhìn có vẻ rẻ. Nhưng lead chỉ là số điện thoại. Từ 100 lead, gọi được 60, hẹn học thử được 20, đóng phí 5–8 người là kịch bản không hiếm — tức chi phí mỗi học viên thật cao gấp 15–20 lần chi phí mỗi lead.",
+          "Quảng cáo báo cáo cho bạn giá lead. Sổ thu học phí mới nói thật giá học viên. Khoảng cách giữa hai con số đó chính là chất lượng vận hành của đội tư vấn — và là nơi tiền âm thầm biến mất nhiều nhất.",
+        ],
+      },
+      {
+        heading: "Vài khoảng tham khảo (đọc kèm muối)",
+        paragraphs: [
+          "Con số dao động mạnh theo khu vực, học phí và độ cạnh tranh, nên hãy xem đây là khung tham chiếu chứ không phải chuẩn:",
+        ],
+        list: [
+          "Lead từ quảng cáo Facebook/Google cho tiếng Anh trẻ em: thường rơi khoảng 50–200 nghìn/lead tùy thành phố và mùa.",
+          "Tỷ lệ lead → học viên đóng phí: 5–15% là phổ biến; đội tư vấn tốt có thể hơn.",
+          "CAC qua kênh quảng cáo: thường rơi vào khoảng 1–4 triệu/học viên ở các thành phố lớn.",
+          "CAC qua giới thiệu hoặc affiliate trả theo kết quả: thấp hơn đáng kể — vì chỉ trả khi có người thật.",
+          "Nguyên tắc sức khỏe: doanh thu vòng đời của học viên nên gấp ít nhất 3 lần CAC.",
+        ],
+      },
+      {
+        heading: "Ba cách kéo CAC xuống mà không cắt ngân sách",
+        list: [
+          "Giữ chân tốt hơn: học viên ở lại thêm 2 tháng làm mọi phép tính đẹp lên ngay — và thường rẻ hơn nhiều so với tìm học viên mới.",
+          "Siết khâu chăm lead: gọi trong 15 phút, nhắn lại sau 24 giờ, mời học thử có thời hạn. Tăng tỷ lệ chốt từ 8% lên 12% tương đương giảm 1/3 CAC.",
+          "Chuyển một phần ngân sách sang kênh trả theo kết quả: hoa hồng chỉ mất khi có học viên đăng ký thật, nên CAC được 'khóa' từ trước — không còn tháng đốt tiền mà về tay không.",
+        ],
+      },
+      {
+        heading: "Bắt đầu từ đâu tối nay?",
+        paragraphs: [
+          "Mở file thu học phí 3 tháng gần nhất, đếm học viên mới. Cộng mọi khoản chi marketing cùng kỳ. Chia. Một phép tính, một con số — nhưng từ nay mọi quyết định ngân sách của bạn có gốc để bám, và bạn sẽ nhìn các báo cáo quảng cáo bằng con mắt khác hẳn.",
         ],
       },
     ],
@@ -128,6 +260,62 @@ export const blogPosts: BlogPost[] = [
           "Cố định một khung giờ — sau bữa tối chẳng hạn — để nó thành nếp như đánh răng.",
           "Con nói sai? Kệ. Dám nói đã là thắng rồi, sửa nhiều con cụt hứng.",
           "Thời gian đầu, hãy để con thắng thường xuyên. Cảm giác thắng mới là thứ kéo con quay lại.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "affiliate-marketing-cho-truong-hoc",
+    title: "Affiliate marketing cho trường học là gì? Giải thích không cần thuật ngữ",
+    excerpt:
+      "Trả tiền quảng cáo thì mất trước được sau, còn affiliate thì ngược lại: chỉ trả khi có học viên đăng ký thật. Bài viết giải thích mô hình này bằng ngôn ngữ đời thường, kèm luôn mặt trái của nó.",
+    category: "Dành cho trung tâm",
+    date: "2026-07-10",
+    readingTime: "6 phút đọc",
+    gradient: "var(--grad-brand)",
+    sections: [
+      {
+        paragraphs: [
+          "Hãy tưởng tượng chị Hoa — một phụ huynh có nhóm Zalo 500 thành viên toàn bố mẹ cùng trường. Con chị học ở trung tâm của bạn và tiến bộ thật. Một hôm có người trong nhóm hỏi chỗ học tiếng Anh, chị giới thiệu trung tâm bạn, kèm đường link đăng ký. Ba gia đình cho con vào học.",
+          "Giờ thêm một bước: bạn gửi chị Hoa một khoản hoa hồng cho mỗi bé đăng ký thành công. Xin chúc mừng — bạn vừa hiểu xong affiliate marketing. Toàn bộ phần còn lại của mô hình chỉ là công cụ để làm việc đó ở quy mô hàng trăm 'chị Hoa' cùng lúc.",
+        ],
+      },
+      {
+        heading: "Khác gì chạy quảng cáo?",
+        paragraphs: [
+          "Khác nhau ở chỗ ai chịu rủi ro. Chạy quảng cáo là trả tiền trước — cho lượt hiển thị, cú click, số điện thoại — rồi hy vọng trong đó có học viên thật. Tháng nào quảng cáo kém, tiền vẫn mất.",
+          "Affiliate đảo ngược trật tự đó: cộng tác viên chia sẻ lớp học của bạn trước, phụ huynh đăng ký thật rồi bạn mới trả hoa hồng. Không có học viên, không mất đồng nào. Về bản chất, bạn chuyển từ 'mua sự chú ý' sang 'mua kết quả'.",
+          "Còn một điểm ăn tiền nữa ít người để ý: lời giới thiệu đến từ người quen — cô giáo, phụ huynh cùng lớp, người có uy tín trong nhóm cộng đồng — vốn dĩ đáng tin hơn mọi banner quảng cáo. Kênh này thừa hưởng sức mạnh của truyền miệng, nhưng có hệ thống và đo đếm được.",
+        ],
+      },
+      {
+        heading: "Vận hành thực tế trông như thế nào?",
+        list: [
+          "Trung tâm đăng thông tin lớp cần tuyển: tên lớp, độ tuổi, khu vực, mức hoa hồng mỗi học viên.",
+          "Cộng tác viên trong mạng lưới chọn lớp phù hợp với cộng đồng của mình, nhận link riêng.",
+          "Họ chia sẻ link vào nhóm Zalo, Facebook, hoặc gửi trực tiếp người đang cần.",
+          "Phụ huynh đăng ký qua link → hệ thống xác minh đăng ký thật (gọi xác nhận, lọc trùng, lọc ảo).",
+          "Trung tâm nhận danh sách học viên đã xác minh và trả hoa hồng theo kết quả — thường đối soát theo tuần.",
+        ],
+      },
+      {
+        heading: "Nói thẳng về mặt trái",
+        paragraphs: [
+          "Không có kênh nào hoàn hảo, và affiliate có hai rủi ro cần biết trước. Một là chất lượng mạng lưới: cộng tác viên kém có thể spam link vô tội vạ, ảnh hưởng hình ảnh trung tâm. Hai là gian lận: đăng ký ảo để ăn hoa hồng — chuyện có thật trong ngành.",
+          "Cả hai đều xử được bằng vận hành tử tế: tuyển chọn cộng tác viên, quy tắc chia sẻ rõ ràng, và quan trọng nhất là khâu xác minh từng đăng ký trước khi tính hoa hồng. Đây cũng chính là phần việc nặng nhất — và là lý do các trung tâm thường hợp tác với một mạng lưới có sẵn hệ thống thay vì tự xây từ đầu. Tự xây được không? Được, nếu bạn có người quản lý riêng; còn không, chi phí vận hành sẽ ăn hết phần tiết kiệm.",
+        ],
+      },
+      {
+        heading: "Kênh này hợp với ai?",
+        paragraphs: [
+          "Hợp nhất với trung tâm đã dạy tốt nhưng yếu khâu marketing — sản phẩm ổn, chỉ thiếu người biết đến. Cũng hợp với nơi ngân sách mỏng, không chịu nổi vài chục triệu tiền quảng cáo 'đặt cược' mỗi tháng.",
+          "Ngược lại, nếu chất lượng lớp học còn lung lay thì khoan — affiliate khuếch đại lời truyền miệng, mà truyền miệng thì lan cả tiếng tốt lẫn tiếng xấu.",
+        ],
+      },
+      {
+        heading: "Tóm lại",
+        paragraphs: [
+          "Affiliate marketing cho giáo dục = chương trình giới thiệu có hệ thống, trả tiền theo học viên thật. Ưu điểm lớn nhất: rủi ro ngân sách gần như bằng không. Việc khó nhất: xác minh và vận hành mạng lưới. Nếu bạn muốn xem mô hình này chạy thực tế ra sao với trung tâm của mình, Affluence luôn sẵn sàng demo — đăng lớp miễn phí, có học viên thật mới tính phí.",
         ],
       },
     ],
@@ -212,6 +400,70 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
+    slug: "quang-cao-facebook-khong-ra-hoc-vien",
+    title: "Đổ tiền vào quảng cáo Facebook mà không ra học viên? 6 lý do thường gặp",
+    excerpt:
+      "Ads vẫn chạy, lead vẫn về, mà lớp vẫn trống. Trước khi kết luận 'Facebook hết thời', hãy soi 6 chỗ rò rỉ này — phần lớn không nằm ở quảng cáo, mà ở những gì diễn ra sau cú click.",
+    category: "Dành cho trung tâm",
+    date: "2026-07-03",
+    readingTime: "7 phút đọc",
+    gradient: "var(--grad-sky)",
+    sections: [
+      {
+        paragraphs: [
+          "\"Bên em chạy ads tháng 20 triệu mà chẳng được mấy học viên\" — câu than quen thuộc đến mức chúng tôi nghe gần như mỗi tuần. Điều thú vị là khi ngồi soi từng khâu, thủ phạm hiếm khi là 'Facebook hết thời'. Tiền thường rò rỉ ở sáu chỗ rất cụ thể dưới đây, và đa số sửa được mà không cần tăng ngân sách.",
+        ],
+      },
+      {
+        heading: "1. Gọi lead quá chậm",
+        paragraphs: [
+          "Đây là thủ phạm số một, không có đối thủ. Phụ huynh điền form lúc 8 giờ tối khi đang phân vân giữa ba trung tâm — nơi nào gọi lại trong 15 phút chiếm ưu thế tuyệt đối, còn để đến trưa mai thì họ đã đăng ký học thử chỗ khác. Lead nguội nhanh hơn cà phê. Nếu chỉ được sửa một thứ sau bài này, hãy sửa tốc độ gọi lead.",
+        ],
+      },
+      {
+        heading: "2. Quảng cáo hứa một đằng, tư vấn nói một nẻo",
+        paragraphs: [
+          "Ads giật 'học phí chỉ 999k' nhưng gọi điện mới biết đó là giá 1 tuần trải nghiệm; ảnh lớp 8 bé nhưng thực tế 20 bé. Phụ huynh không ngu — họ cảm nhận được độ vênh ngay, và niềm tin mất từ cuộc gọi đầu tiên. Quảng cáo tốt nhất là quảng cáo mà đội tư vấn có thể xác nhận từng chữ.",
+        ],
+      },
+      {
+        heading: "3. Nhắm sai người ngay từ đầu",
+        paragraphs: [
+          "Target 'phụ huynh có con 5–10 tuổi' nghe hợp lý, nhưng nếu trung tâm của bạn ở Tân Bình mà quảng cáo phủ cả thành phố thì một nửa ngân sách đang mua những cú click không bao giờ thành học viên — không ai chở con 15km đi học tiếng Anh tuần ba buổi. Với mô hình trung tâm vật lý, bán kính 3–5km quanh cơ sở là vùng vàng; ngoài vùng đó, mỗi đồng chi ra loãng dần theo cây số.",
+        ],
+      },
+      {
+        heading: "4. Một mẫu quảng cáo chạy từ mùa này sang mùa khác",
+        paragraphs: [
+          "Mẫu ads dù hay đến đâu cũng 'mòn': cùng một tệp người xem thấy nó lần thứ mười thì chi phí mỗi lead cứ thế leo thang. Dấu hiệu nhận biết rất dễ — CPL tháng này cao hơn hẳn tháng trước dù không đổi gì. Thuốc chữa: luôn có 2–3 mẫu chạy song song, thay mẫu yếu mỗi 2–4 tuần, và ưu tiên video thật từ lớp học — chân thật thắng trau chuốt trong ngành này.",
+        ],
+      },
+      {
+        heading: "5. Đo bằng chỉ số đẹp thay vì chỉ số thật",
+        paragraphs: [
+          "Reach, impression, like — các con số này làm báo cáo đẹp nhưng không đóng học phí. Chuỗi số duy nhất đáng theo dõi: chi bao nhiêu → bao nhiêu lead → bao nhiêu đến học thử → bao nhiêu đóng phí. Agency nào báo cáo cho bạn bằng like và reach mà né con số học viên thật, hãy hỏi lại cho ra nhẽ.",
+        ],
+      },
+      {
+        heading: "6. Đặt cược toàn bộ vào một kênh",
+        paragraphs: [
+          "Khi 100% học viên mới đến từ Facebook, bạn không có kế hoạch B: một lần tài khoản quảng cáo bị khóa, một đợt giá thầu tăng, là tuyển sinh đứng hình. Các trung tâm khỏe thường đứng trên ba chân: một kênh trả phí, một dòng giới thiệu có cơ chế, và một kênh trả theo kết quả (affiliate) làm lưới an toàn — kênh cuối này hay ở chỗ không ra học viên thì cũng không mất tiền.",
+        ],
+      },
+      {
+        heading: "Checklist rà nhanh trước khi đổ thêm tiền",
+        list: [
+          "Lead được gọi trong bao lâu? (chuẩn: dưới 15 phút)",
+          "Nội dung ads có khớp 100% những gì tư vấn viên nói không?",
+          "Ngân sách có đang tập trung trong bán kính 3–5km quanh cơ sở?",
+          "Có ít nhất 2 mẫu quảng cáo đang chạy song song không?",
+          "Bạn có biết chính xác tháng rồi Facebook mang về bao nhiêu học viên đóng phí — không phải bao nhiêu lead?",
+          "Nếu Facebook sập ngày mai, học viên mới đến từ đâu?",
+        ],
+      },
+    ],
+  },
+  {
     slug: "tre-xem-youtube-tieng-anh",
     title: "Con 'nói tiếng Anh như gió' nhờ YouTube — mừng hay lo?",
     excerpt:
@@ -259,6 +511,69 @@ export const blogPosts: BlogPost[] = [
         heading: "Chốt lại",
         paragraphs: [
           "YouTube là cái loa nghe tiếng Anh tuyệt vời, nhưng là ông thầy tồi nếu phải đứng lớp một mình. Video cho con nghe, còn bố mẹ và lớp học cho con được nói, được hỏi, được sửa. Đủ cả ba mảnh đó, giờ ngồi màn hình của con mới thật sự đổi được thành vốn liếng ngôn ngữ — chứ không chỉ là mấy bài hát thuộc lòng để biểu diễn cho ông bà xem.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "5-con-so-do-luong-tuyen-sinh",
+    title: "5 con số chủ trung tâm nên nhìn mỗi tuần (mất đúng 30 phút)",
+    excerpt:
+      "Không cần dashboard xịn hay nhân sự data. Một file Excel với 5 cột, cập nhật sáng thứ Hai hằng tuần, đủ để bạn biết trung tâm đang khỏe hay đang rò tiền — và rò ở đâu.",
+    category: "Dành cho trung tâm",
+    date: "2026-06-25",
+    readingTime: "6 phút đọc",
+    gradient: "var(--grad-mint)",
+    sections: [
+      {
+        paragraphs: [
+          "Phần lớn chủ trung tâm điều hành bằng cảm giác: tháng này 'có vẻ đông', quý này 'hình như chậm'. Cảm giác không sai, nhưng nó luôn đến trễ — khi bạn cảm nhận được lớp vắng thì vấn đề đã âm ỉ hai ba tháng trước đó rồi.",
+          "Tin tốt: chỉ cần 5 con số, cập nhật mỗi sáng thứ Hai, là bạn đi trước cảm giác của chính mình một quý. Không cần phần mềm gì ngoài Excel.",
+        ],
+      },
+      {
+        heading: "1. Số lead mới trong tuần",
+        paragraphs: [
+          "Đếm tất cả: form quảng cáo, tin nhắn fanpage, cuộc gọi hỏi thăm, người ghé trực tiếp, giới thiệu. Đây là 'nhiệt kế' đầu phễu — nó tụt hai tuần liên tiếp là chuông báo sớm nhất bạn có, trước khi doanh thu kịp phản ánh bất cứ điều gì.",
+        ],
+      },
+      {
+        heading: "2. Tỷ lệ lead → học thử",
+        paragraphs: [
+          "Trong số người hỏi, bao nhiêu phần trăm đặt lịch học thử? Con số này đo chất lượng hai thứ cùng lúc: lead có thật không, và đội tư vấn có làm tốt không. Nó thấp bất thường thì một trong hai khâu đó có vấn đề — và cả hai đều sửa được trong tuần, không cần chờ hết quý.",
+        ],
+      },
+      {
+        heading: "3. Tỷ lệ học thử → đóng phí",
+        paragraphs: [
+          "Con số trung thực nhất về sản phẩm của bạn. Phụ huynh đã dắt con đến tận nơi, ngồi xem tận mắt — họ không đóng phí nghĩa là buổi học thử chưa đủ thuyết phục: giáo viên chưa 'ghi điểm', lớp chưa đúng kỳ vọng, hay khâu chốt sau buổi học bị bỏ lửng. Tỷ lệ này mà dưới 30% thì nên dừng đổ thêm tiền quảng cáo và sửa buổi học thử trước — không có gì lãng phí bằng kéo người đến rồi để họ đi.",
+        ],
+      },
+      {
+        heading: "4. Chi phí cho mỗi học viên mới (CAC)",
+        paragraphs: [
+          "Tổng chi marketing tuần/tháng chia cho số học viên mới đóng phí. Đặt cạnh học phí trung bình để biết mỗi học viên mới bao lâu thì 'hòa vốn'. Cách tính chi tiết và các khoảng tham khảo có trong bài riêng về chi phí marketing giáo dục trên blog này.",
+        ],
+      },
+      {
+        heading: "5. Số học viên nghỉ trong tuần",
+        paragraphs: [
+          "Con số bị né nhiều nhất — chẳng ai thích đếm người rời đi. Nhưng giữ chân rẻ hơn tuyển mới nhiều lần: một học viên nghỉ sớm không chỉ mất doanh thu các tháng sau mà còn mang theo cả những lời giới thiệu lẽ ra sẽ có. Đếm số nghỉ, và quan trọng hơn: gọi hỏi lý do từng trường hợp. Ba cuộc gọi như vậy dạy bạn nhiều hơn mọi bản khảo sát.",
+        ],
+      },
+      {
+        heading: "Cách vận hành cho nhẹ nhàng",
+        list: [
+          "Một file Excel, 5 cột, mỗi tuần một dòng. Ai trong đội cũng điền được, mất 30 phút sáng thứ Hai.",
+          "Nhìn xu hướng 4 tuần, đừng phản ứng với từng tuần lẻ — một tuần xấu là nhiễu, bốn tuần xấu là tín hiệu.",
+          "Mỗi tuần chỉ chọn MỘT con số tệ nhất để sửa. Sửa tràn lan thì không sửa được gì.",
+          "Sau 3 tháng, bạn sẽ có thứ quý hơn mọi lời khuyên: đường cơ sở của chính trung tâm mình để tự so sánh.",
+        ],
+      },
+      {
+        heading: "Lời cuối",
+        paragraphs: [
+          "Quản trị bằng số không làm mất đi 'cái hồn' của nghề giáo dục — nó chỉ đảm bảo nơi dạy tốt không chết vì vận hành. Và nếu bạn muốn cả phần tuyển sinh cũng chạy theo đúng tinh thần đo đếm được này — trả tiền theo học viên thật thay vì theo lời hứa — thì đó chính xác là mô hình Affluence được sinh ra để làm.",
         ],
       },
     ],

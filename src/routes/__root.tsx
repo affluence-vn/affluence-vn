@@ -76,8 +76,7 @@ const SITE_URL = "https://affluence.vn";
 const SITE_TITLE = "Affluence — Kết nối trường học & mạng lưới marketers";
 const SITE_DESCRIPTION =
   "Affluence là agency marketing kết nối trường học, trung tâm giáo dục với các nhà quảng cáo và mạng lưới affiliate hàng đầu Việt Nam.";
-const SITE_OG_IMAGE =
-  "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b98eafda-8b39-4dc8-86d9-caa8d72ad6d2/id-preview-7fbb241e--4a93ac13-5758-4d05-bc43-3a8cda8ee022.lovable.app-1783307493206.png";
+const SITE_OG_IMAGE = "https://affluence.vn/og/site.png";
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
@@ -110,6 +109,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
     ],
     scripts: [
+      { src: "https://www.googletagmanager.com/gtag/js?id=G-PGTR9CTWS2", async: true },
+      {
+        children:
+          "window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-PGTR9CTWS2');",
+      },
       {
         type: "application/ld+json",
         children: JSON.stringify({

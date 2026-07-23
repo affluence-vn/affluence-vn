@@ -15,6 +15,7 @@ export const Route = createFileRoute("/blog/$slug")({
     if (!loaderData) return {};
     const { post } = loaderData;
     const url = `https://affluence.vn/blog/${post.slug}`;
+    const ogImage = `https://affluence.vn/og/${post.slug}.png`;
     return {
       meta: [
         { title: `${post.title} | Affluence Blog` },
@@ -23,6 +24,11 @@ export const Route = createFileRoute("/blog/$slug")({
         { property: "og:description", content: post.excerpt },
         { property: "og:type", content: "article" },
         { property: "og:url", content: url },
+        { property: "og:image", content: ogImage },
+        { property: "og:image:width", content: "1200" },
+        { property: "og:image:height", content: "630" },
+        { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:image", content: ogImage },
       ],
       links: [{ rel: "canonical", href: url }],
       scripts: [

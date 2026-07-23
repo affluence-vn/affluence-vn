@@ -130,7 +130,128 @@ function RoadmapArt({ className }: ArtProps) {
   );
 }
 
+function MegaphoneArt({ className }: ArtProps) {
+  return (
+    <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid meet" className={className} aria-hidden="true">
+      {/* megaphone */}
+      <path d="M95 105 l90 -42 v100 l-90 -42 z" fill="rgba(255,255,255,0.9)" />
+      <rect x="60" y="100" width="40" height="28" rx="8" fill="rgba(255,255,255,0.9)" />
+      <rect x="70" y="128" width="18" height="30" rx="6" fill="rgba(255,255,255,0.6)" />
+      {/* sound waves */}
+      <g stroke="#fff" strokeWidth="7" strokeLinecap="round" fill="none" opacity="0.9">
+        <path d="M210 85 a40 40 0 0 1 0 56" />
+        <path d="M240 68 a70 70 0 0 1 0 90" />
+        <path d="M270 52 a100 100 0 0 1 0 122" />
+      </g>
+      {/* people dots reached */}
+      <circle cx="330" cy="80" r="9" fill="#fff" opacity="0.85" />
+      <circle cx="345" cy="120" r="9" fill="#fff" opacity="0.7" />
+      <circle cx="330" cy="160" r="9" fill="#fff" opacity="0.85" />
+    </svg>
+  );
+}
+
+function CoinsArt({ className }: ArtProps) {
+  return (
+    <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid meet" className={className} aria-hidden="true">
+      {/* coin stacks */}
+      <g fill="rgba(255,255,255,0.85)">
+        <rect x="80" y="150" width="56" height="14" rx="7" />
+        <rect x="80" y="132" width="56" height="14" rx="7" />
+        <rect x="160" y="150" width="56" height="14" rx="7" />
+        <rect x="160" y="132" width="56" height="14" rx="7" />
+        <rect x="160" y="114" width="56" height="14" rx="7" />
+        <rect x="160" y="96" width="56" height="14" rx="7" />
+      </g>
+      {/* coin */}
+      <circle cx="290" cy="90" r="38" fill="rgba(255,255,255,0.95)" />
+      <text x="290" y="103" textAnchor="middle" fontSize="38" fontWeight="800" fill="#7c3aed">₫</text>
+      {/* calculator hint */}
+      <g stroke="#fff" strokeWidth="5" strokeLinecap="round" opacity="0.8">
+        <line x1="80" y1="70" x2="130" y2="70" />
+        <line x1="105" y1="45" x2="105" y2="95" />
+      </g>
+      <circle cx="340" cy="170" r="6" fill="#fff" opacity="0.6" />
+    </svg>
+  );
+}
+
+function NetworkArt({ className }: ArtProps) {
+  return (
+    <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid meet" className={className} aria-hidden="true">
+      {/* connections */}
+      <g stroke="#fff" strokeWidth="4" opacity="0.7">
+        <line x1="200" y1="112" x2="105" y2="60" />
+        <line x1="200" y1="112" x2="105" y2="165" />
+        <line x1="200" y1="112" x2="295" y2="60" />
+        <line x1="200" y1="112" x2="295" y2="165" />
+        <line x1="200" y1="112" x2="330" y2="112" />
+        <line x1="200" y1="112" x2="70 " y2="112" />
+      </g>
+      {/* center hub */}
+      <circle cx="200" cy="112" r="30" fill="rgba(255,255,255,0.95)" />
+      <path d="M188 112 l8 8 16 -16" stroke="#7c3aed" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+      {/* nodes */}
+      <g fill="rgba(255,255,255,0.85)">
+        <circle cx="105" cy="60" r="16" />
+        <circle cx="105" cy="165" r="16" />
+        <circle cx="295" cy="60" r="16" />
+        <circle cx="295" cy="165" r="16" />
+        <circle cx="330" cy="112" r="12" />
+        <circle cx="70" cy="112" r="12" />
+      </g>
+    </svg>
+  );
+}
+
+function TargetArt({ className }: ArtProps) {
+  return (
+    <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid meet" className={className} aria-hidden="true">
+      {/* target */}
+      <circle cx="170" cy="112" r="62" fill="none" stroke="#fff" strokeWidth="8" opacity="0.9" />
+      <circle cx="170" cy="112" r="38" fill="none" stroke="#fff" strokeWidth="8" opacity="0.7" />
+      <circle cx="170" cy="112" r="14" fill="rgba(255,255,255,0.95)" />
+      {/* arrow */}
+      <g stroke="#fff" strokeWidth="7" strokeLinecap="round">
+        <line x1="170" y1="112" x2="265" y2="40" />
+      </g>
+      <path d="M265 40 l-24 4 M265 40 l-4 24" stroke="#fff" strokeWidth="7" strokeLinecap="round" fill="none" />
+      {/* leaking coins */}
+      <circle cx="300" cy="140" r="10" fill="#fff" opacity="0.75" />
+      <circle cx="320" cy="170" r="8" fill="#fff" opacity="0.55" />
+      <circle cx="285" cy="180" r="6" fill="#fff" opacity="0.45" />
+    </svg>
+  );
+}
+
+function ChartArt({ className }: ArtProps) {
+  return (
+    <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid meet" className={className} aria-hidden="true">
+      {/* axes */}
+      <g stroke="#fff" strokeWidth="6" strokeLinecap="round" opacity="0.85">
+        <line x1="80" y1="45" x2="80" y2="175" />
+        <line x1="80" y1="175" x2="330" y2="175" />
+      </g>
+      {/* bars */}
+      <g fill="rgba(255,255,255,0.5)">
+        <rect x="105" y="130" width="34" height="45" rx="6" />
+        <rect x="155" y="105" width="34" height="70" rx="6" />
+        <rect x="205" y="120" width="34" height="55" rx="6" />
+        <rect x="255" y="80" width="34" height="95" rx="6" />
+      </g>
+      {/* trend line */}
+      <path d="M110 120 L170 92 L220 105 L285 60" fill="none" stroke="#fff" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" />
+      <circle cx="285" cy="60" r="10" fill="#fff" />
+    </svg>
+  );
+}
+
 const artBySlug: Record<string, (p: ArtProps) => JSX.Element> = {
+  "cach-tuyen-sinh-cho-trung-tam-tieng-anh": MegaphoneArt,
+  "chi-phi-marketing-giao-duc": CoinsArt,
+  "affiliate-marketing-cho-truong-hoc": NetworkArt,
+  "quang-cao-facebook-khong-ra-hoc-vien": TargetArt,
+  "5-con-so-do-luong-tuyen-sinh": ChartArt,
   "do-tuoi-vang-hoc-tieng-anh": GoldenAgeArt,
   "hoc-tieng-anh-qua-tro-choi": GamesArt,
   "chon-trung-tam-tieng-anh-cho-con": ChecklistArt,
