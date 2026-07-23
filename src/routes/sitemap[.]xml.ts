@@ -16,10 +16,10 @@ export const Route = createFileRoute("/sitemap.xml")({
       GET: async () => {
         const entries: SitemapEntry[] = [
           { path: "/", changefreq: "weekly", priority: "1.0" },
-          { path: "/blog", changefreq: "weekly", priority: "0.8" },
+          { path: "/blog/", changefreq: "weekly", priority: "0.8" },
           ...blogPosts.map(
             (post): SitemapEntry => ({
-              path: `/blog/${post.slug}`,
+              path: `/blog/${post.slug}/`,
               changefreq: "monthly",
               priority: "0.6",
             }),

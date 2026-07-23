@@ -27,7 +27,10 @@ import { blogPosts, formatPostDate } from "../lib/blog";
 
 export const Route = createFileRoute("/")({
   head: () => ({
-    links: [{ rel: "preload", as: "image", href: logoMark, fetchpriority: "high" }],
+    links: [
+      { rel: "canonical", href: "https://affluence.vn/" },
+      { rel: "preload", as: "image", href: logoMark, fetchpriority: "high" },
+    ],
   }),
   component: AboutPage,
 });

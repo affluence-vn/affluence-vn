@@ -14,7 +14,7 @@ export const Route = createFileRoute("/blog/$slug")({
   head: ({ loaderData }) => {
     if (!loaderData) return {};
     const { post } = loaderData;
-    const url = `https://affluence.vn/blog/${post.slug}`;
+    const url = `https://affluence.vn/blog/${post.slug}/`;
     const ogImage = `https://affluence.vn/og/${post.slug}.png`;
     return {
       meta: [
