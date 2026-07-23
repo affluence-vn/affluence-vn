@@ -1,5 +1,6 @@
 import { Link, createFileRoute } from "@tanstack/react-router";
-import { ArrowRight, BookOpen, Clock } from "lucide-react";
+import { ArrowRight, Clock } from "lucide-react";
+import { BlogArt } from "../../components/BlogArt";
 import { FloatingContact } from "../../components/FloatingContact";
 import { Footer, Nav } from "../../components/SiteChrome";
 import { blogPosts, formatPostDate } from "../../lib/blog";
@@ -53,10 +54,10 @@ function BlogIndexPage() {
           className="group grid overflow-hidden rounded-3xl border border-border bg-white transition-all hover:-translate-y-1 hover:shadow-lift md:grid-cols-[1fr_1.2fr]"
         >
           <div
-            className="relative flex min-h-[220px] items-center justify-center md:min-h-[300px]"
+            className="relative min-h-[220px] overflow-hidden md:min-h-[300px]"
             style={{ background: featured.gradient }}
           >
-            <BookOpen className="h-16 w-16 text-white/90" strokeWidth={1.5} />
+            <BlogArt slug={featured.slug} className="absolute inset-0 h-full w-full" />
             <span className="absolute top-5 left-5 rounded-full bg-white/90 px-3.5 py-1.5 text-[12px] font-bold text-ink">
               {featured.category}
             </span>
@@ -90,10 +91,10 @@ function BlogIndexPage() {
               className="group flex flex-col overflow-hidden rounded-3xl border border-border bg-white transition-all hover:-translate-y-1 hover:shadow-lift"
             >
               <div
-                className="relative flex h-40 items-center justify-center"
+                className="relative h-40 overflow-hidden"
                 style={{ background: post.gradient }}
               >
-                <BookOpen className="h-10 w-10 text-white/90" strokeWidth={1.5} />
+                <BlogArt slug={post.slug} className="h-full w-full" />
                 <span className="absolute top-4 left-4 rounded-full bg-white/90 px-3 py-1 text-[11.5px] font-bold text-ink">
                   {post.category}
                 </span>

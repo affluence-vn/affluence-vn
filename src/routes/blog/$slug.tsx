@@ -1,5 +1,6 @@
 import { Link, createFileRoute, notFound } from "@tanstack/react-router";
-import { ArrowLeft, ArrowRight, BookOpen, Check, Clock } from "lucide-react";
+import { ArrowLeft, ArrowRight, Check, Clock } from "lucide-react";
+import { BlogArt } from "../../components/BlogArt";
 import { FloatingContact } from "../../components/FloatingContact";
 import { Footer, Nav } from "../../components/SiteChrome";
 import { blogPosts, formatPostDate, getPostBySlug } from "../../lib/blog";
@@ -85,6 +86,12 @@ function BlogPostPage() {
       </header>
 
       <main className="mx-auto max-w-3xl px-6 py-12 md:py-16">
+        <div
+          className="mb-8 h-48 overflow-hidden rounded-3xl shadow-lift md:h-64"
+          style={{ background: post.gradient }}
+        >
+          <BlogArt slug={post.slug} className="h-full w-full" />
+        </div>
         <article className="rounded-3xl border border-border bg-white p-7 md:p-12">
           {post.sections.map((section, i) => (
             <section key={i} className={i === 0 ? "" : "mt-9"}>
@@ -145,8 +152,8 @@ function BlogPostPage() {
                   params={{ slug: p.slug }}
                   className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-white transition-all hover:-translate-y-1 hover:shadow-lift"
                 >
-                  <div className="flex h-28 items-center justify-center" style={{ background: p.gradient }}>
-                    <BookOpen className="h-8 w-8 text-white/90" strokeWidth={1.5} />
+                  <div className="h-28 overflow-hidden" style={{ background: p.gradient }}>
+                    <BlogArt slug={p.slug} className="h-full w-full" />
                   </div>
                   <div className="flex flex-1 flex-col p-6">
                     <span className="text-[12px] font-bold text-primary">{p.category}</span>

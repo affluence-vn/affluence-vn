@@ -2,7 +2,6 @@ import { useEffect, useRef } from "react";
 import { Link, createFileRoute } from "@tanstack/react-router";
 import {
   ArrowRight,
-  BookOpen,
   Clock,
   GraduationCap,
   Target,
@@ -22,6 +21,7 @@ import logoMark from "../assets/logo-mark.png";
 import vuongPhoto from "../assets/vuong.jpg";
 import uyenPhoto from "../assets/uyen.jpg";
 import { FloatingContact } from "../components/FloatingContact";
+import { BlogArt } from "../components/BlogArt";
 import { Footer, Nav } from "../components/SiteChrome";
 import { blogPosts, formatPostDate } from "../lib/blog";
 
@@ -523,8 +523,8 @@ function BlogSection() {
               params={{ slug: post.slug }}
               className="group flex flex-col overflow-hidden rounded-3xl border border-border bg-white transition-all hover:-translate-y-1 hover:shadow-lift"
             >
-              <div className="relative flex h-36 items-center justify-center" style={{ background: post.gradient }}>
-                <BookOpen className="h-10 w-10 text-white/90" strokeWidth={1.5} />
+              <div className="relative h-36 overflow-hidden" style={{ background: post.gradient }}>
+                <BlogArt slug={post.slug} className="h-full w-full" />
                 <span className="absolute top-4 left-4 rounded-full bg-white/90 px-3 py-1 text-[11.5px] font-bold text-ink">
                   {post.category}
                 </span>
