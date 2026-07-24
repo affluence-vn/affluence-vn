@@ -192,6 +192,247 @@ export const blogPosts: BlogPost[] = [
     },
   },
   {
+    slug: "ielts-la-gi-tong-quan",
+    title: "IELTS là gì? Tổng quan chứng chỉ tiếng Anh quốc tế phổ biến nhất",
+    excerpt:
+      "IELTS do ai tổ chức, thi những gì, và ai thực sự cần chứng chỉ này? Tổng quan dễ hiểu cho người mới tìm hiểu IELTS lần đầu.",
+    category: "Luyện thi IELTS",
+    date: "2026-07-24",
+    readingTime: "6 phút đọc",
+    gradient: "var(--grad-mint)",
+    sections: [
+      {
+        paragraphs: [
+          "IELTS (International English Language Testing System) là một trong hai chứng chỉ tiếng Anh quốc tế được công nhận rộng rãi nhất thế giới, cùng với TOEFL. Bài thi được đồng tổ chức bởi British Council, IDP và Cambridge Assessment English, có mặt tại hơn 140 quốc gia.",
+          "Khác với TOEIC — vốn thiên về tiếng Anh công sở — IELTS được thiết kế để đánh giá khả năng sử dụng tiếng Anh trong môi trường học thuật và đời sống nói chung, nên gần như là yêu cầu bắt buộc khi du học, định cư hoặc xin visa lao động ở các nước nói tiếng Anh.",
+        ],
+      },
+      {
+        heading: "IELTS thi những kỹ năng nào?",
+        paragraphs: [
+          "Bài thi IELTS đánh giá đầy đủ 4 kỹ năng, làm liên tục trong khoảng 2 giờ 45 phút:",
+        ],
+        list: [
+          "Listening (30 phút): nghe 4 đoạn hội thoại/độc thoại, độ khó tăng dần, trả lời 40 câu hỏi.",
+          "Reading (60 phút): đọc 3 bài dài, dạng học thuật hoặc tổng hợp tùy loại hình thi, 40 câu hỏi.",
+          "Writing (60 phút): viết 2 bài — Task 1 mô tả biểu đồ/thư (tùy loại hình), Task 2 viết luận nêu quan điểm.",
+          "Speaking (11–14 phút): phỏng vấn trực tiếp với giám khảo, gồm 3 phần từ hỏi đáp cơ bản đến trình bày và thảo luận sâu.",
+        ],
+      },
+      {
+        heading: "IELTS Academic và IELTS General Training khác nhau thế nào?",
+        paragraphs: [
+          "Đây là điểm dễ nhầm lẫn nhất với người thi lần đầu. Hai loại hình chia sẻ chung phần Listening và Speaking, nhưng khác nhau ở Reading và Writing:",
+        ],
+        list: [
+          "IELTS Academic: dành cho người du học bậc đại học, sau đại học hoặc đăng ký hành nghề chuyên môn. Bài đọc và viết mang tính học thuật.",
+          "IELTS General Training: dành cho người đi làm, định cư hoặc học nghề tại nước ngoài. Bài đọc và viết gắn với ngữ cảnh đời sống, công việc hàng ngày.",
+        ],
+      },
+      {
+        heading: "Thang điểm IELTS (band score) hoạt động thế nào?",
+        paragraphs: [
+          "IELTS chấm theo thang điểm 0–9 cho từng kỹ năng, gọi là band score, sau đó lấy trung bình cộng làm tròn để ra band tổng. Một vài mốc tham khảo:",
+        ],
+        list: [
+          "Band 5.0–5.5: mức tối thiểu cho nhiều chương trình cao đẳng, dự bị đại học.",
+          "Band 6.0–6.5: mức phổ biến để vào đại học ở Anh, Úc, Canada.",
+          "Band 7.0+: yêu cầu của các trường top hoặc ngành học đòi hỏi tiếng Anh cao như Luật, Y.",
+          "Band 8.0–9.0: hiếm gặp, thường chỉ cần cho mục đích học thuật/nghiên cứu chuyên sâu.",
+        ],
+      },
+      {
+        heading: "Ai thực sự cần thi IELTS?",
+        paragraphs: [
+          "Ba nhóm phổ biến nhất: học sinh, sinh viên chuẩn bị du học; người lao động xin visa kỹ năng tại Anh, Úc, Canada, New Zealand; và người làm hồ sơ định cư diện tay nghề. Nếu mục tiêu của bạn chỉ là xin việc trong nước hoặc xét tốt nghiệp đại học tại Việt Nam, TOEIC hoặc VSTEP thường là lựa chọn phù hợp và tiết kiệm chi phí hơn.",
+          "Chứng chỉ IELTS có hiệu lực 2 năm kể từ ngày thi, nên nên cân nhắc thời điểm thi sao cho còn hiệu lực đúng lúc nộp hồ sơ.",
+        ],
+      },
+    ],
+    cta: {
+      heading: "Chuẩn bị thi IELTS mà chưa biết bắt đầu từ đâu?",
+      body: "TAEC có khóa luyện thi IELTS cam kết đầu ra theo band điểm mục tiêu, lộ trình cá nhân hóa theo trình độ đầu vào. 5 cơ sở tại TP.HCM và lớp học online.",
+      label: "Nhận tư vấn lộ trình IELTS",
+      href: "https://taec.affluence.vn/",
+    },
+  },
+  {
+    slug: "dang-ky-thi-ielts-lich-thi-le-phi-tphcm",
+    title: "Đăng ký thi IELTS ở đâu tại TP.HCM? Lịch thi và lệ phí 2026",
+    excerpt:
+      "Thi IELTS ở đâu uy tín tại TP.HCM, đăng ký ra sao và cần chuẩn bị gì? Hướng dẫn từng bước cho người thi lần đầu.",
+    category: "Luyện thi IELTS",
+    date: "2026-07-24",
+    readingTime: "5 phút đọc",
+    gradient: "var(--grad-peach)",
+    sections: [
+      {
+        paragraphs: [
+          "IELTS là chứng chỉ có quy trình đăng ký khá đơn giản nếu biết rõ các bước, nhưng dễ khiến người thi lần đầu bối rối vì có nhiều đơn vị tổ chức cùng lúc. Bài viết này đi thẳng vào những gì bạn cần biết để đăng ký đúng ngay từ đầu.",
+        ],
+      },
+      {
+        heading: "Thi IELTS ở đâu tại TP.HCM?",
+        paragraphs: [
+          "Tại Việt Nam, IELTS được tổ chức chính thức bởi hai đơn vị: British Council và IDP. Cả hai đều có văn phòng và điểm thi tại TP.HCM, kết quả có giá trị hoàn toàn như nhau vì cùng theo chuẩn chấm của Cambridge Assessment English — bạn chọn đơn vị nào chủ yếu dựa vào lịch thi còn trống và địa điểm thuận tiện.",
+          "Ngoài thi giấy truyền thống, cả hai đơn vị đều có hình thức thi trên máy tính (Computer-delivered IELTS) với lịch thi dày hơn và có kết quả nhanh hơn — thường trong 3–5 ngày thay vì 13 ngày như thi giấy.",
+        ],
+      },
+      {
+        heading: "Lệ phí thi IELTS bao nhiêu?",
+        paragraphs: [
+          "Lệ phí thi IELTS (cả Academic và General Training) hiện dao động quanh mức trên dưới 5.000.000đ, được điều chỉnh định kỳ theo tỷ giá và thông báo của từng đơn vị. Nên kiểm tra mức phí chính xác trên website British Council hoặc IDP tại thời điểm đăng ký, vì đây là mức phí không nhỏ và ít khi thi lại nếu chưa chuẩn bị kỹ.",
+        ],
+      },
+      {
+        heading: "Các bước đăng ký",
+        list: [
+          "Bước 1: Tạo tài khoản trên website British Council hoặc IDP.",
+          "Bước 2: Chọn loại hình thi (Academic/General Training) và hình thức (giấy/máy tính).",
+          "Bước 3: Chọn ngày thi và địa điểm còn chỗ trống.",
+          "Bước 4: Điền thông tin cá nhân đúng như hộ chiếu hoặc CCCD — sai thông tin có thể ảnh hưởng đến việc nhận chứng chỉ.",
+          "Bước 5: Thanh toán lệ phí và lưu lại email xác nhận lịch thi.",
+        ],
+      },
+      {
+        heading: "Ngày thi cần mang theo gì?",
+        list: [
+          "Hộ chiếu hoặc CCCD bản gốc — đúng loại giấy tờ đã đăng ký, không được thay thế bằng giấy tờ khác.",
+          "Có mặt trước giờ thi theo hướng dẫn (thường 30–60 phút) để làm thủ tục, chụp ảnh, lấy dấu vân tay.",
+          "Không mang theo điện thoại, đồng hồ thông minh vào phòng thi.",
+        ],
+      },
+      {
+        heading: "Nên đăng ký khi nào?",
+        paragraphs: [
+          "Vì lịch thi IELTS thường kín trước vài tuần, đặc biệt vào mùa cao điểm nộp hồ sơ du học (tháng 4–8), nên đăng ký sớm ngay khi xác định được ngày thi mong muốn. Với thi trên máy tính, lịch thường linh hoạt hơn nên có thể đăng ký sát ngày hơn nếu cần gấp.",
+          "Chứng chỉ IELTS có hiệu lực 2 năm — nên canh thời điểm thi để chứng chỉ còn hiệu lực đúng lúc nộp hồ sơ, tránh phải thi lại vì hết hạn.",
+        ],
+      },
+    ],
+    cta: {
+      heading: "Muốn chắc chắn đạt band điểm trước khi đăng ký thi thật?",
+      body: "TAEC luyện thi IELTS cam kết đầu ra, có thi thử sát đề để bạn biết chính xác mình đã sẵn sàng hay chưa trước khi đóng lệ phí thi thật.",
+      label: "Đăng ký học thử IELTS",
+      href: "https://taec.affluence.vn/",
+    },
+  },
+  {
+    slug: "vstep-la-gi-chung-chi-dung-de-lam-gi",
+    title: "VSTEP là gì? Chứng chỉ tiếng Anh dùng để làm gì?",
+    excerpt:
+      "VSTEP là chứng chỉ tiếng Anh do Bộ GD&ĐT Việt Nam ban hành khung năng lực — dùng để xét tốt nghiệp, thi công chức, xét tuyển sau đại học. Tổng quan cho người mới tìm hiểu.",
+    category: "Chứng chỉ khác",
+    date: "2026-07-24",
+    readingTime: "5 phút đọc",
+    gradient: "var(--grad-lime)",
+    sections: [
+      {
+        paragraphs: [
+          "VSTEP (Vietnamese Standardized Test of English Proficiency) là bài thi đánh giá năng lực tiếng Anh theo Khung năng lực ngoại ngữ 6 bậc dùng cho Việt Nam, do Bộ Giáo dục và Đào tạo ban hành. Khác với TOEIC hay IELTS vốn là chứng chỉ quốc tế, VSTEP được xây dựng riêng để phù hợp với hệ thống giáo dục và hành chính trong nước.",
+          "Vì là chứng chỉ do Bộ GD&ĐT công nhận trực tiếp, VSTEP thường có lệ phí thấp hơn đáng kể so với TOEIC hay IELTS, và là lựa chọn phổ biến cho các mục đích hành chính, học thuật trong nước.",
+        ],
+      },
+      {
+        heading: "VSTEP dùng để làm gì?",
+        list: [
+          "Chuẩn đầu ra tiếng Anh cho sinh viên đại học, cao đẳng tại nhiều trường.",
+          "Điều kiện xét tuyển hoặc tốt nghiệp thạc sĩ, tiến sĩ tại các trường trong nước.",
+          "Thi tuyển, thi nâng ngạch công chức, viên chức yêu cầu chứng chỉ ngoại ngữ.",
+          "Một số vị trí tuyển dụng trong cơ quan nhà nước, tổ chức trong nước yêu cầu chứng chỉ ngoại ngữ theo khung năng lực Việt Nam.",
+        ],
+      },
+      {
+        heading: "Cấu trúc bài thi VSTEP",
+        paragraphs: [
+          "VSTEP đánh giá đầy đủ 4 kỹ năng Nghe, Nói, Đọc, Viết, thi trong một ngày. Cấu trúc và độ khó được thiết kế tương ứng với từng bậc năng lực mà thí sinh đăng ký thi (Bậc 3, Bậc 4 hoặc Bậc 5), khác với TOEIC/IELTS vốn thi chung một đề cho mọi trình độ rồi mới quy đổi điểm.",
+        ],
+      },
+      {
+        heading: "VSTEP Bậc 3, Bậc 4, Bậc 5 khác nhau thế nào?",
+        list: [
+          "Bậc 3 (tương đương B1 theo khung CEFR châu Âu): mức phổ biến nhất cho chuẩn đầu ra đại học.",
+          "Bậc 4 (tương đương B2): thường dùng cho thạc sĩ, một số vị trí công chức yêu cầu cao hơn.",
+          "Bậc 5 (tương đương C1): mức cao, dùng cho tiến sĩ hoặc vị trí đòi hỏi năng lực tiếng Anh chuyên sâu.",
+        ],
+      },
+      {
+        heading: "VSTEP khác gì TOEIC, IELTS?",
+        paragraphs: [
+          "Nếu mục tiêu của bạn là công việc, học tập trong nước — xét tốt nghiệp, thi công chức, xét tuyển sau đại học tại Việt Nam — VSTEP thường là lựa chọn phù hợp và tiết kiệm nhất. Nếu mục tiêu là du học, định cư hoặc làm việc ở nước ngoài, IELTS vẫn là chứng chỉ được công nhận rộng rãi hơn. TOEIC phù hợp nhất khi công việc bạn nhắm tới yêu cầu cụ thể chứng chỉ này, thường gặp ở các công ty Nhật, Hàn tại Việt Nam.",
+        ],
+      },
+    ],
+    cta: {
+      heading: "Cần chứng chỉ VSTEP để tốt nghiệp hoặc xét tuyển?",
+      body: "TAEC có khóa luyện thi VSTEP cam kết đầu ra theo đúng bậc năng lực bạn cần, lộ trình rõ ràng và thi thử sát đề.",
+      label: "Nhận tư vấn lộ trình VSTEP",
+      href: "https://taec.affluence.vn/",
+    },
+  },
+  {
+    slug: "lo-trinh-tieng-anh-giao-tiep-nguoi-mat-goc-di-lam",
+    title: "Lộ trình tiếng Anh giao tiếp cho người mất gốc, đi làm bận rộn",
+    excerpt:
+      "Đi làm cả ngày, tiếng Anh mất gốc từ lâu — vẫn có cách học giao tiếp thực tế mà không cần bỏ việc. Lộ trình 3 giai đoạn cho người bận rộn.",
+    category: "Tiếng Anh giao tiếp",
+    date: "2026-07-24",
+    readingTime: "6 phút đọc",
+    gradient: "var(--grad-sunrise)",
+    sections: [
+      {
+        paragraphs: [
+          "Rất nhiều người đi làm muốn học lại tiếng Anh giao tiếp nhưng bỏ cuộc chỉ sau vài tuần — không phải vì thiếu khả năng, mà vì đặt mục tiêu sai cách. Học kiểu 'ôn lại từ đầu như học sinh cấp 2' vừa mất thời gian, vừa không sát với nhu cầu thực tế: nói được trong công việc và cuộc sống hàng ngày.",
+          "Lộ trình dưới đây chia theo 3 giai đoạn, thiết kế cho người thực sự bận — chỉ cần 20–30 phút mỗi ngày là đủ tạo tiến bộ rõ rệt sau vài tháng.",
+        ],
+      },
+      {
+        heading: "Vì sao người mất gốc thường học mãi không tiến bộ?",
+        paragraphs: [
+          "Sai lầm phổ biến nhất là học lại ngữ pháp từ đầu như một môn học ở trường — trong khi thứ cần nhất để giao tiếp là phản xạ nghe – nói, không phải kiến thức lý thuyết. Người lớn học ngôn ngữ hiệu quả nhất khi học đúng thứ mình sẽ dùng ngay, không phải học dàn trải mọi chủ điểm ngữ pháp.",
+        ],
+      },
+      {
+        heading: "Giai đoạn 1: Xây phản xạ nghe – nói cơ bản (4–6 tuần)",
+        paragraphs: [
+          "Mục tiêu duy nhất của giai đoạn này là làm quen lại với việc nghe và bật ra câu tiếng Anh, không cần đúng ngữ pháp hoàn hảo. Tập trung vào các mẫu câu giao tiếp hàng ngày: chào hỏi, giới thiệu bản thân, hỏi đường, đặt món — những tình huống lặp lại nhiều, dễ tạo cảm giác 'nói được' để có động lực đi tiếp.",
+        ],
+      },
+      {
+        heading: "Giai đoạn 2: Phản xạ tình huống công sở (6–8 tuần)",
+        paragraphs: [
+          "Khi đã quen phản xạ cơ bản, chuyển sang các tình huống gắn với công việc: trả lời email bằng giọng nói, họp nhanh, trao đổi với đồng nghiệp nước ngoài, thuyết trình ngắn. Đây là giai đoạn quan trọng nhất với người đi làm, vì đây chính là nơi tiếng Anh thực sự được dùng đến.",
+        ],
+      },
+      {
+        heading: "Giai đoạn 3: Giao tiếp tự nhiên, mở rộng chủ đề (liên tục)",
+        paragraphs: [
+          "Giai đoạn này không có điểm kết thúc cố định — mục tiêu là duy trì và mở rộng dần sang các chủ đề đa dạng hơn: tin tức, sở thích cá nhân, tranh luận quan điểm. Đây là lúc tiếng Anh giao tiếp thực sự trở thành kỹ năng tự nhiên thay vì bài học phải ôn.",
+        ],
+      },
+      {
+        heading: "Học bao lâu thì nói được?",
+        paragraphs: [
+          "Với người thực sự mất gốc, học đều 20–30 phút mỗi ngày, đa số bắt đầu cảm nhận được sự tự tin rõ rệt sau khoảng 3 tháng cho các tình huống giao tiếp cơ bản, và 6–9 tháng để tự tin trong môi trường công việc. Con số này thay đổi tùy người, nhưng điều quan trọng hơn là học đều đặn thắng học dồn — 20 phút mỗi ngày luôn hiệu quả hơn 3 tiếng vào cuối tuần.",
+        ],
+      },
+      {
+        heading: "Mẹo duy trì động lực khi lịch làm việc dày đặc",
+        list: [
+          "Gắn việc học vào một thói quen có sẵn — ví dụ nghe tiếng Anh trên đường đi làm thay vì tìm thêm thời gian mới.",
+          "Chọn lớp học có buổi tối hoặc cuối tuần cố định, thay vì học tự do không ai nhắc.",
+          "Ưu tiên lớp có người chữa lỗi phát âm và phản xạ trực tiếp — tự học một mình rất dễ lặp lại lỗi sai mà không biết.",
+        ],
+      },
+    ],
+    cta: {
+      heading: "Muốn có lộ trình rõ ràng thay vì tự học một mình?",
+      body: "TAEC có khóa Global Speak — tiếng Anh giao tiếp cho người đi làm, lớp buổi tối/cuối tuần, giảng viên chữa phát âm trực tiếp. 5 cơ sở tại TP.HCM và lớp học online.",
+      label: "Đăng ký học thử giao tiếp",
+      href: "https://taec.affluence.vn/",
+    },
+  },
+  {
     slug: "cach-tuyen-sinh-cho-trung-tam-tieng-anh",
     title: "7 kênh tuyển sinh cho trung tâm tiếng Anh — kênh nào đáng tiền năm 2026?",
     excerpt:
